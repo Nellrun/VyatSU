@@ -1,0 +1,6 @@
+[package]
+name=chm
+version=2.6.4
+[require]
+packages=rtl rtl fcl-xml
+packages_win32_i386=

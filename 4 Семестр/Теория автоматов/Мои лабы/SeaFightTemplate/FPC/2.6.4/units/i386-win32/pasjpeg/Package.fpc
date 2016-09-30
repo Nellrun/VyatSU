@@ -1,0 +1,6 @@
+[package]
+name=pasjpeg
+version=2.6.4
+[require]
+packages=rtl 
+packages_win32_i386=

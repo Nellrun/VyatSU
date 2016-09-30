@@ -1,0 +1,8 @@
+[package]
+name=fcl-base
+version=2.6.4
+[require]
+packages_darwin=univint
+packages_iphonesim=univint
+packages=rtl 
+packages_win32_i386=

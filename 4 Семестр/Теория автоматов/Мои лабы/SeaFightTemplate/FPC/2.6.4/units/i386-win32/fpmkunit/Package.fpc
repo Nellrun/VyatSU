@@ -1,0 +1,6 @@
+[package]
+name=fpmkunit
+version=2.6.4
+[require]
+packages=rtl paszlib fcl-process
+packages_win32_i386=

@@ -1,0 +1,6 @@
+[package]
+name=fpindexer
+version=2.6.4
+[require]
+packages=rtl fcl-base fcl-db chm sqlite
+packages_win32_i386=fcl-base fcl-base fcl-xml ibase fcl-xml postgres fcl-xml mysql fcl-xml odbc fcl-xml oracle fcl-xml sqlite dblib fcl-base fcl-xml fcl-base fcl-xml fcl-base fcl-base fcl-json fcl-base pxlib fcl-base sqlite fcl-base fcl-base fcl-xml fcl-base fcl-xml  ibase mysql oracle sqlite odbc postgres fcl-base

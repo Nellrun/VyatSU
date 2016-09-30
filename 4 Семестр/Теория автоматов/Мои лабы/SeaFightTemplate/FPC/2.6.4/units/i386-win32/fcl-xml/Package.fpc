@@ -1,0 +1,12 @@
+[package]
+name=fcl-xml
+version=2.6.4
+[require]
+packages=rtl fcl-base
+packages_beos=iconvenc
+packages_linux=iconvenc
+packages_haiku=iconvenc
+packages_freebsd=iconvenc
+packages_win32_i386=
+packages_darwin=iconvenc
+packages_iphonesim=iconvenc

@@ -1,0 +1,6 @@
+[package]
+name=fcl-image
+version=2.6.4
+[require]
+packages=rtl pasjpeg paszlib fcl-base
+packages_win32_i386=

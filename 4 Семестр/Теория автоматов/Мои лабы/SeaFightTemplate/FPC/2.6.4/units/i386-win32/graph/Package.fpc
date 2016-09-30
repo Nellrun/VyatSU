@@ -1,0 +1,15 @@
+[package]
+name=graph
+version=2.6.4
+[require]
+libc=y
+packages_linux=ptc opengl
+packages_win32=sdl ptc opengl
+packages_linux_powerpc=sdl
+packages_darwin_i386=sdl
+packages_win64=ptc opengl
+packages_freebsd_i386=sdl
+packages=rtl 
+packages_linux_i386=sdl
+packages_darwin_powerpc=sdl
+packages_win32_i386=

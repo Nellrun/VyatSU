@@ -1,0 +1,6 @@
+[package]
+name=fcl-json
+version=2.6.4
+[require]
+packages=rtl fcl-base
+packages_win32_i386=

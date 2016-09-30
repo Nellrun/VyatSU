@@ -1,0 +1,24 @@
+:TITLE Справка
+:BASE OA_Manual.hlp
+1 Краткие теоретические сведения
+2 Цель курсового проекта=Welcome_topic@OA_Manual.hlp
+2 Рекомендации к выполнению курсового проекта=Second_topic@OA_Manual.hlp
+2 Функциональная схема ОА=OA@OA_Manual.hlp
+1 Описание интерфейса программы
+2 Опции меню=Overview@OA_Manual.hlp
+1 Этапы выполнения лабораторной работы
+2 Создание схемы в САПР Quartus
+3 Создание проекта=Nicaeaiea_iiaeoa@OA_Manual.hlp
+3 Создание блок-схемы
+4 Создание функционального блока=Nicaeaiea_ooieoeeiiaeueiiai_ae@OA_Manual.hlp
+4 Создание графических обозначений примитивов=Nicaeaiea_aaoeaneeo_iaiciaaiee@OA_Manual.hlp
+4 Создание обозначений входных/выходных выводов=Nicaeaiea_iaiciaaiee_aoiaeiuo_@OA_Manual.hlp
+4 Создание соединений=Nicaeaiea_niaaeeiaiee@OA_Manual.hlp
+4 Создание микропрограммного управляющего автомата=Nicaeaiea_ieeiiiaaiiiiai_oiaae@OA_Manual.hlp
+2 Компиляция проекта=Eiiieeoee_iiaeoa@OA_Manual.hlp
+2 Исследование фунциональной схемы
+3 Открытие файла схемы=Ioeuoea_oaeea_noaiu@OA_Manual.hlp
+3 Настройка параметров автомата=Ianoieea_iaaiaoia_aaoiiaoa@OA_Manual.hlp
+3 Создание входного вектора=Nicaeaiea_aoiaeiiai_aaeoia@OA_Manual.hlp
+3 Открытие файла результата=Ioeuoea_oaeea_acoeueoaoa@OA_Manual.hlp
+1 Пароли доступа=Iaiee_aeinooia@OA_Manual.hlp

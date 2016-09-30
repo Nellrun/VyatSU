@@ -1,0 +1,27 @@
+GED
+
+	Undo Commands
+	     1.	Move
+	     2.	Delete
+	     3.	Insert Symbol
+	     4.	Delete
+	     5.	Delete Insert
+	     6.	Move
+	     7.	Delete
+	     8.	Update Symbol or Block
+	     9.	Move
+
+
+RPW
+
+	Undo Commands
+	     1.	||Compilation Report||Flow Summary
+
+
+WED
+
+	Undo Commands
+	     1.	Node or Bus Properties
+			 *** 
+
+

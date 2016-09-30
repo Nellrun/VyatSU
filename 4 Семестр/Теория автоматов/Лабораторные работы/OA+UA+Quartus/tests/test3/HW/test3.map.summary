@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Mar 13 17:27:39 2009
+Quartus II Version : 8.1 Build 163 10/28/2008 SJ Full Version
+Revision Name : test3
+Top-level Entity Name : test3
+Family : Cyclone III
+Total logic elements : 39
+    Total combinational functions : 2
+    Dedicated logic registers : 39
+Total registers : 39
+Total pins : 21
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1

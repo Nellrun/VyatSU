@@ -1,0 +1,1440 @@
+
+.MODEL D101 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  70.12
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D102 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  73.63
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D103 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  77.31
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D104 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  81.17
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D105 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  85.23
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D106 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  89.49
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D107 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  93.97
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D108 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  98.67
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D109 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  103.68
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D110 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  108.78
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D111 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  114.22
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D112 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  119.93
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D113 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  125.93
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D114 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  132.22
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D115 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  138.83
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D116 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  145.77
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D117 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  153.06
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D118 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  160.72
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D119 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  168.75
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D120 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  177.19
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D121 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  71.15
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D122 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  74.71
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D123 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  78.44
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D124 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  82.37
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D125 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  86.48
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D126 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  90.81
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D127 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  95.35
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D128 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  100.12
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D129 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  105.12
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D130 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  110.38
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D131 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  115.89
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D132 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  121.69
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D133 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  127.78
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D134 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  134.16
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D135 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  140.87
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D136 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  147.92
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D137 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  155.31
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D138 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  163.08
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D139 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  171.23
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D140 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  179.79
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D141 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  72.18
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D142 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  75.79
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D143 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  79.58
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D144 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  83.56
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D145 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  87.74
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D146 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  92.12
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D147 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  96.73
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D148 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  101.56
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D149 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  106.64
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D150 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  111.97
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D151 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  117.57
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D152 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  123.45
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D153 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  129.62
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D154 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  136.11
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D155 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  142.91
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D156 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  150.06
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D157 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  157.56
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D158 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  165.44
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D159 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  173.71
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D160 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  182.39
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D161 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  73.21
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D162 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  76.87
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D163 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  80.71
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D164 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  84.75
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D165 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  88.99
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D166 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  93.44
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D167 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  98.11
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D168 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  103.01
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D169 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  108.16
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D170 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  113.57
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D171 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  119.25
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D172 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  125.21
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D173 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  131.47
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D174 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  138.05
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D175 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  144.95
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D176 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  152.19
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D177 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  159.81
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D178 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  167.79
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D179 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  176.19
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)
+
+.MODEL D180 D (
++   IS =  1e-14
++   RS =  0.05
++   CJO =  0
++   VJ =  1
++   TT =  0
++   M =  0.5
++   BV =  184.99
++   N =  1
++   EG =  1.11
++   XTI =  3
++   KF =  0
++   AF =  1
++   FC =  0.5
++   IBV =  0.001
++   TNOM =  27
+)

@@ -1,0 +1,6 @@
+[package]
+name=fcl-registry
+version=2.6.4
+[require]
+packages=rtl fcl-xml
+packages_win32_i386=

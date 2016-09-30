@@ -1,0 +1,16 @@
+[package]
+name=gtk2
+version=2.6.4
+[require]
+libc=y
+packages_beos=x11
+packages_linux=x11
+packages_openbsd=x11
+packages=rtl cairo
+packages_haiku=x11
+packages_freebsd=x11
+packages_win32_i386=
+packages_solaris=x11
+packages_netbsd=x11
+packages_darwin=x11
+packages_iphonesim=x11

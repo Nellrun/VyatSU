@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="test3">
+		<CBX_INST_ENTRY INSTANCE_NAME="|test3|pll_10mhz:inst25|altpll:altpll_component" CBX_FILE_NAME="pll_10mhz_altpll.v"/>
+	</PROJECT>
+</LOG_ROOT>

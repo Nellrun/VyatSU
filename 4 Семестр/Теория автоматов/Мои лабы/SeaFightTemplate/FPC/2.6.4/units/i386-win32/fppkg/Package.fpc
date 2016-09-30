@@ -1,0 +1,9 @@
+[package]
+name=fppkg
+version=2.6.4
+[require]
+packages=rtl fpmkunit fcl-base fcl-xml fcl-process fcl-net paszlib libcurl fppkg
+tools=data2inc
+packages_darwin=univint
+packages_iphonesim=univint
+packages_win32_i386=

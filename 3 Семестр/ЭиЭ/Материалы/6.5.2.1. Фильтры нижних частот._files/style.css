@@ -1,0 +1,126 @@
+body {
+  background-color: #CCC;
+  font-family: "Times New Roman", "Times", sans-serif;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+h1 {
+  background-color: #FFF;;
+  height: 36px;
+  margin: 0px;
+  padding: 10px 20px 10px 20px;
+  text-align: right;
+}
+#navigationColumn {
+  background-color: #FFF;
+  padding-bottom: 5px;
+  width: 190px;
+}
+#navigationColumn div.header {
+  border-bottom-color: #000;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: #000;
+  border-left-style: solid;
+  border-left-width: 1px;
+  font-weight: bold;
+  padding: 2px;
+  text-align: center;
+}
+#navigationColumn ul {
+  list-style-type: square;
+}
+#navigationColumn ul li {
+  padding: 3px;
+}
+#navigationColumn ul li:hover {
+  border-bottom-color: #000;
+  border-bottom-style: dotted;
+  border-bottom-width: 1px;
+  border-left-color: #000;
+  border-left-style: dotted;
+  border-left-width: 1px;
+  border-top-color: #000;
+  border-top-style: dotted;
+  border-top-width: 1px;
+  background-color: #CCC;
+  font-weight: bold;
+}
+
+
+
+#box {
+	background-color: #FFF;
+	left: 204px;
+	padding: 10px;
+	position: absolute;
+	right: 8px;
+	text-align: justify;
+	top: 73px;
+	width: 788px;
+}
+.article {
+  border-color: #000;
+  border-style: solid;
+  border-width: 1px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+.article .title {
+  border-bottom-color: #000;
+  border-bottom-style: dashed;
+  border-bottom-width: 1px;
+  font-size: 18pt;
+  font-weight: bold;
+  padding-bottom: 7px;
+  text-align: right;
+}
+.article .timeStamp {
+  border-bottom-color: #000;
+  border-bottom-style: dashed;
+  border-bottom-width: 1px;
+  font-size: 10pt;
+  font-style: italic;
+  padding-bottom: 2px;
+  text-align: right;
+}
+.article .content {
+  padding-top: 5px;
+}
+.article .content a {
+  text-decoration: underline;
+}
+
+#navigationColumnRight {
+  background-color: #FFF;
+	left: 810px;
+	padding: 10px;
+	position: absolute;
+	text-align: justify;
+                  top:0px;
+	width: 120px;
+
+
+}
+#navigationColumnRight div.header {
+  border-bottom-color: #000;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: #000;
+  border-left-style: solid;
+  border-left-width: 1px;
+  font-weight: bold;
+  padding: 2px;
+  text-align: center;
+}
+
+
+#footer {
+  border-color: #000;
+  border-style: solid;
+  border-width: 1px;
+  padding: 5px;
+  text-align: center;
+}

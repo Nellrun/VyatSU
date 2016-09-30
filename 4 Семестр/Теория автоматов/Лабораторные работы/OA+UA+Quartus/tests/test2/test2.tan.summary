@@ -1,0 +1,56 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 5.380 ns
+From           : RAM_D[8]
+To             : sram:inst|CHECK
+From Clock     : --
+To Clock       : clk_25mhz
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 10.448 ns
+From           : sram:inst|ADDR[3]
+To             : RAM_A[3]
+From Clock     : clk_25mhz
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -3.112 ns
+From           : RAM_D[2]
+To             : sram:inst|CHECK
+From Clock     : --
+To Clock       : clk_25mhz
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clk_25mhz'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 205.80 MHz ( period = 4.859 ns )
+From           : sram:inst|ADDR[4]
+To             : sram:inst|cnt_cycle[5]
+From Clock     : clk_25mhz
+To Clock       : clk_25mhz
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

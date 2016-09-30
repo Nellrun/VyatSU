@@ -1,0 +1,6 @@
+[package]
+name=fpgtk
+version=2.6.4
+[require]
+packages=rtl fcl-base gtk1
+packages_win32_i386=

@@ -1,0 +1,6 @@
+[package]
+name=winunits-base
+version=2.6.4
+[require]
+packages=rtl fcl-registry fcl-base
+packages_win32_i386=

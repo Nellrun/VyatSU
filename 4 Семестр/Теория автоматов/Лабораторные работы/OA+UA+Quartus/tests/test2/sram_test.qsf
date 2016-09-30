@@ -1,0 +1,211 @@
+# Copyright (C) 1991-2008 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+
+# The default values for assignments are stored in the file
+#		sram_test_assignment_defaults.qdf
+# If this file doesn't exist, and for assignments not listed, see file
+#		assignment_defaults.qdf
+
+# Altera recommends that you do not modify this file. This
+# file is updated automatically by the Quartus II software
+# and any changes you make may be lost or overwritten.
+
+
+
+# Project-Wide Assignments
+# ========================
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "7.2 SP3"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "08:46:03  MAY 03, 2008"
+set_global_assignment -name LAST_QUARTUS_VERSION 8.1
+set_global_assignment -name VHDL_FILE rom_unit.vhd
+set_global_assignment -name VHDL_FILE LCD_Display.vhd
+set_global_assignment -name VHDL_FILE sram.vhd
+
+# Pin & Location Assignments
+# ==========================
+set_location_assignment PIN_141 -to RAM_A[0]
+set_location_assignment PIN_137 -to RAM_A[2]
+set_location_assignment PIN_106 -to RAM_A[12]
+set_location_assignment PIN_136 -to RAM_A[3]
+set_location_assignment PIN_135 -to RAM_A[4]
+set_location_assignment PIN_115 -to RAM_A[6]
+set_location_assignment PIN_105 -to RAM_A[13]
+set_location_assignment PIN_111 -to RAM_A[10]
+set_location_assignment PIN_113 -to RAM_A[8]
+set_location_assignment PIN_119 -to RAM_A[5]
+set_location_assignment PIN_143 -to RAM_A[16]
+set_location_assignment PIN_142 -to RAM_A[17]
+set_location_assignment PIN_104 -to RAM_A[14]
+set_location_assignment PIN_110 -to RAM_A[11]
+set_location_assignment PIN_114 -to RAM_A[7]
+set_location_assignment PIN_138 -to RAM_A[1]
+set_location_assignment PIN_144 -to RAM_A[15]
+set_location_assignment PIN_112 -to RAM_A[9]
+set_location_assignment PIN_120 -to RAM_we_n
+set_location_assignment PIN_2 -to RAM_bhe_n
+set_location_assignment PIN_3 -to RAM_ble_n
+set_location_assignment PIN_1 -to RAM_oe_n
+set_location_assignment PIN_4 -to RAM_D[15]
+set_location_assignment PIN_7 -to RAM_D[14]
+set_location_assignment PIN_10 -to RAM_D[13]
+set_location_assignment PIN_11 -to RAM_D[12]
+set_location_assignment PIN_124 -to RAM_D[6]
+set_location_assignment PIN_125 -to RAM_D[5]
+set_location_assignment PIN_126 -to RAM_D[4]
+set_location_assignment PIN_121 -to RAM_D[7]
+set_location_assignment PIN_129 -to RAM_D[1]
+set_location_assignment PIN_128 -to RAM_D[2]
+set_location_assignment PIN_132 -to RAM_D[0]
+set_location_assignment PIN_133 -to RAM_ce_n
+set_location_assignment PIN_99 -to RAM_D[11]
+set_location_assignment PIN_100 -to RAM_D[10]
+set_location_assignment PIN_101 -to RAM_D[9]
+set_location_assignment PIN_103 -to RAM_D[8]
+set_location_assignment PIN_127 -to RAM_D[3]
+set_location_assignment PIN_34 -to pba
+set_location_assignment PIN_51 -to pbb
+
+set_location_assignment PIN_64 -to led0
+set_location_assignment PIN_60 -to led1
+set_location_assignment PIN_59 -to led2
+set_location_assignment PIN_58 -to led3
+set_location_assignment PIN_55 -to led4
+set_location_assignment PIN_54 -to led5
+set_location_assignment PIN_53 -to led6
+set_location_assignment PIN_52 -to led7
+
+
+set_location_assignment PIN_22 -to clk_25mhz
+
+# Classic Timing Assignments
+# ==========================
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+
+# Analysis & Synthesis Assignments
+# ================================
+set_global_assignment -name FAMILY "Cyclone III"
+set_global_assignment -name TOP_LEVEL_ENTITY sram_test
+set_global_assignment -name CYCLONEII_OPTIMIZATION_TECHNIQUE AREA
+set_global_assignment -name DEVICE_FILTER_PACKAGE TQFP
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 144
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 8
+
+# Fitter Assignments
+# ==================
+set_global_assignment -name DEVICE EP3C5E144C8
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to clk_25mhz
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to leddspl1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to leddspl2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to leddspl3
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to leddspl4
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to leddspl5
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to leddspl6
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to leddspl7
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to leddspl8
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to pba
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to pbb
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_A[17]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_A[16]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_A[15]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_A[14]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_A[13]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_A[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_A[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_A[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_A[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_A[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_A[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_A[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_A[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_A[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_A[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_A[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_A[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_A[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_bhe_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_ble_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_ce_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_D[15]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_D[14]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_D[13]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_D[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_D[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_D[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_D[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_D[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_D[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_D[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_D[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_D[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_D[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_D[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_D[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_D[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_oe_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_we_n
+
+# Assembler Assignments
+# =====================
+
+# Advanced I/O Timing Assignments
+# ===============================
+set_global_assignment -name ENABLE_ADVANCED_IO_TIMING ON
+
+# start EDA_TOOL_SETTINGS(eda_palace)
+# -----------------------------------
+
+	# Analysis & Synthesis Assignments
+	# ================================
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_palace
+
+# end EDA_TOOL_SETTINGS(eda_palace)
+# ---------------------------------
+
+# -----------------------
+# start ENTITY(sram_test)
+
+	# start LOGICLOCK_REGION(Root Region)
+	# -----------------------------------
+
+		# LogicLock Region Assignments
+		# ============================
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+
+	# end LOGICLOCK_REGION(Root Region)
+	# ---------------------------------
+
+	# start DESIGN_PARTITION(Top)
+	# ---------------------------
+
+		# Incremental Compilation Assignments
+		# ===================================
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 2147039 -section_id Top
+
+	# end DESIGN_PARTITION(Top)
+	# -------------------------
+
+# end ENTITY(sram_test)
+# ---------------------
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_DATA0_AFTER_CONFIGURATION "AS INPUT TRI-STATED"
+set_global_assignment -name RESERVE_DATA1_AFTER_CONFIGURATION "AS INPUT TRI-STATED"
+set_global_assignment -name RESERVE_FLASH_NCE_AFTER_CONFIGURATION "AS INPUT TRI-STATED"
+set_global_assignment -name RESERVE_DCLK_AFTER_CONFIGURATION "USE AS PROGRAMMING PIN"
+set_global_assignment -name MISC_FILE "F:/HDD/design/CycloneIII_Eval_Brd_rev2/tests/work/init_data/tests_CIII_eval_board/11_sram_test/sram_test.dpf"
+set_global_assignment -name USE_TIMEQUEST_TIMING_ANALYZER OFF

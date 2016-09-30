@@ -1,0 +1,147 @@
+ .category{
+		color:#3d4e76;
+		margin:10px;
+		font-family:Verdana,sans-serif;
+		font-weight: bold;
+		font-size:12px;
+	}
+
+.category a{
+		color:#3d4e76;
+		}
+a {color: #3D4E76;}
+.stat ul li {
+		margin:5px 0 5px 0;
+}
+
+.sectiontableentry1rte a, 
+.sectiontableentry2rte a {
+		color:#3d4e76;
+		font-size:12px;
+        line-height:1.5;
+}
+.contentpagetitle_r_colon{color:#3d4e76;}
+.pagenav {border:0px red solid;}
+
+.pagenav .pagenav_prev,
+.pagenav .pagenav_next{ 
+		font-size:14px;
+		font-weight:bold;
+		padding:15px 0 0 0;		
+}
+
+.pagenav .pagenav_prev a,
+.pagenav .pagenav_next a{
+		color:#3D4E76;
+}
+
+.stat{
+margin-right:220px;
+padding:0 10px 0 0;
+}
+
+/*-----ADS MANAGER------*/
+.adsmanager_pathway{
+		display:none;
+}
+
+.t_ob{
+		font-size:13px;
+		margin:15px 0 0 0 ;
+		color:#555555;
+}
+
+.adsmanager_ads_title{
+		color:#972711;	
+}
+
+.vas{
+		color:#555555;
+}
+.hrr{
+		color:#555555;
+		margin:0 0 5px 0;
+		background-color: #555555;
+}
+
+.adsmanager_ads_desc{
+		font-size:16px;
+}
+
+.adsmanager_ads_contact{
+		font-size:13px;
+}
+
+.adsmanager_ads_price{
+		font-size:15px;
+}
+
+.mostread a{
+		color:#3D4E76;
+}
+.mainlevel{
+		1color:#3D4E76;
+		color:#333333;
+} 
+.adsmanager_ads_body{
+		color:#3f3f3f;
+	}
+.form-validate{
+		margin:0 30px 0 0;
+}
+
+
+.cat_ind_chil{float:left;margin:0 20px 0 0; text-decoration:none;}
+.cat_ind_chil a{text-decoration:none; 1color:#035178;}
+
+.sp_cat{margin:0 0 10px 0;}
+.sp_cat a{
+		  color:#035178;
+		  font-weight:bold;
+}
+.add_site_ind a{color:#035178;}
+.add_site_ind{border-top:1px #b1babe solid; width:70%; padding:5px 0 0 0px; margin:5px 0 0 0;}
+
+
+.bord_ind{border-top:1px #333333  dotted;margin:10px 0px 10px 0;}
+
+.contentpaneopen h2{font-size: 14px;}
+.contentpaneopen h1{font-size: 14px;}
+.contentpaneopen h3{font-size: 14px;}
+
+.c_left .moduletableumen_mod .mainlevelumen{ 
+            color:#035178;
+            font-weight:bold;
+            }
+.c_left .moduletableumen_mod table td {padding:0px 0 10px 0;}
+
+#CommentMenu,
+.itemsmall
+          {
+                display:none;
+                }
+
+.form {border:0px !important;}
+
+.sectiontableheader {
+background: #F0F0F0 !important;
+padding:5px !important;
+font-size:16px;
+margin:10px 0 0 0;
+
+font-weight:bold;
+}
+#CommentFormTitle {color: #333 !important;}
+
+.cont #Comments table {
+padding:0 0 0px 0px !important; border:0px blue solid;
+}
+
+#comment .item {color:black;}
+.tab1{margin:0 !important;}
+
+#comment{margin:10px 0 0 0 ;}
+
+
+
+.contentheading a.contentpagetitle{ color:#035178;}

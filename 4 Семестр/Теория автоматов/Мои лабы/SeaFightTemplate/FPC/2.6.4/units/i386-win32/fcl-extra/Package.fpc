@@ -1,0 +1,10 @@
+[package]
+name=fcl-extra
+version=2.6.4
+[require]
+packages=rtl fcl-base
+packages_win32=winunits-base winunits-jedi
+packages_win64=winunits-base winunits-jedi
+packages_darwin=univint
+packages_iphonesim=univint
+packages_win32_i386=

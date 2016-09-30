@@ -1,0 +1,6 @@
+[package]
+name=fcl-net
+version=2.6.4
+[require]
+packages=rtl fcl-base fcl-xml fcl-passrc fcl-async
+packages_win32_i386=

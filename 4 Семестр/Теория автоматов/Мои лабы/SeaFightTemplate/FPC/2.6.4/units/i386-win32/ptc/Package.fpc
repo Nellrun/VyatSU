@@ -1,0 +1,10 @@
+[package]
+name=ptc
+version=2.6.4
+[require]
+packages=rtl hermes fcl-base
+packages_linux=x11 opengl
+packages_win32=opengl
+packages_freebsd=x11 opengl
+packages_win64=opengl
+packages_win32_i386=

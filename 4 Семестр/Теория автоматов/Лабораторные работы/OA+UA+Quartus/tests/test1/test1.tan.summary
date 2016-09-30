@@ -1,0 +1,56 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 7.175 ns
+From           : counter_high:inst1|lpm_counter:lpm_counter_component|cntr_kph:auto_generated|counter_reg_bit[24]
+To             : led6
+From Clock     : clk_25mhz
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 9.982 ns
+From           : sw[3]
+To             : led3
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Clock Setup: 'pll_25mhz:inst|altpll:altpll_component|pll_25mhz_altpll:auto_generated|wire_pll1_clk[0]'
+Slack          : 6.388 ns
+Required Time  : 100.00 MHz ( period = 10.000 ns )
+Actual Time    : 276.85 MHz ( period = 3.612 ns )
+From           : counter_high:inst1|lpm_counter:lpm_counter_component|cntr_kph:auto_generated|counter_reg_bit[0]
+To             : counter_high:inst1|lpm_counter:lpm_counter_component|cntr_kph:auto_generated|counter_reg_bit[24]
+From Clock     : pll_25mhz:inst|altpll:altpll_component|pll_25mhz_altpll:auto_generated|wire_pll1_clk[0]
+To Clock       : pll_25mhz:inst|altpll:altpll_component|pll_25mhz_altpll:auto_generated|wire_pll1_clk[0]
+Failed Paths   : 0
+
+Type           : Clock Hold: 'pll_25mhz:inst|altpll:altpll_component|pll_25mhz_altpll:auto_generated|wire_pll1_clk[0]'
+Slack          : 0.777 ns
+Required Time  : 100.00 MHz ( period = 10.000 ns )
+Actual Time    : N/A
+From           : counter_high:inst1|lpm_counter:lpm_counter_component|cntr_kph:auto_generated|counter_reg_bit[24]
+To             : counter_high:inst1|lpm_counter:lpm_counter_component|cntr_kph:auto_generated|counter_reg_bit[24]
+From Clock     : pll_25mhz:inst|altpll:altpll_component|pll_25mhz_altpll:auto_generated|wire_pll1_clk[0]
+To Clock       : pll_25mhz:inst|altpll:altpll_component|pll_25mhz_altpll:auto_generated|wire_pll1_clk[0]
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+
