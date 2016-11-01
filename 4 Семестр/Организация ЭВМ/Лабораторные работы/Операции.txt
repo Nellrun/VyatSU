@@ -1,0 +1,15 @@
+A - LD r A
+B - MV r A
+C - sb r C
+D - Call
+
+00 - HLT
+01 - SUB
+02 - ADD
+03 - LDI // Загрузка с индексацией
+04 - push
+05 - pop
+06 - JZ
+07 - JS
+10 - JMP
+11 - SHL
