@@ -1,0 +1,29 @@
+<project name="Lab 4" default="done">
+    <target name="make.dirs">
+        <mkdir dir="class" />
+        <mkdir dir="build" />
+    </target>
+    <target name="compile" depends="make.dirs">
+        <javac destDir="class">
+            <src path="src"/>
+        </javac>
+    </target>
+    <target name="make.jar" depends="compile">
+        <jar destfile="build/lab_4.jar">
+            <fileset dir="class">
+                <include name="*.class"/>
+            </fileset>
+            <manifest>
+                <attribute name="Main-Class" value="App" />
+            </manifest>
+        </jar>
+    </target>
+    <target name="done" depends="make.jar,clear.class">
+        <echo>Done</echo>
+    </target>
+
+    <target name="clear.class">
+        <delete dir="class"/>
+    </target>
+
+</project>

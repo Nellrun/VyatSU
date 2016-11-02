@@ -30,10 +30,6 @@ public class Gui extends JFrame {
         randPrimeBut.addActionListener(new OnRandPrimeButClick());
     }
 
-    /**
-     * Класс-обработчик, который обрабатывает нажатие
-     * на кнопку "Получить массив простых чисел"
-     */
     class OnRandPrimeArrayButClick implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
@@ -51,10 +47,7 @@ public class Gui extends JFrame {
         }
     }
 
-    /**
-     * Класс-обработчик, который обрабатывает клик
-     * по кнопке "Вернуть простое число"
-     */
+
     class OnRandPrimeButClick implements  ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {

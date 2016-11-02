@@ -52,8 +52,7 @@ public class Gui extends JFrame {
     }
 
     /**
-     * Класс-обработчик, который обрабатывает клик
-     * по кнопке "Вернуть простое число"
+     * Класс-обработчик, который обрабатывает клик по кнопке "Вернуть простое число"
      */
     class OnRandPrimeButClick implements  ActionListener {
         @Override
