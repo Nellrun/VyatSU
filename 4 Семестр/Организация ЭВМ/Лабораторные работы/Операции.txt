@@ -13,3 +13,5 @@ D - Call
 07 - JS
 10 - JMP
 11 - SHL
+12 - LM
+13 - IRET

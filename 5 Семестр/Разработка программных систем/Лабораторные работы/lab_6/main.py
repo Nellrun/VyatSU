@@ -46,13 +46,13 @@ if (not options):
     opt.print_usage()
     exit(0)
 
-if (options.count != None) and (options.count > 0):
+if (options.count != None) and (0 < options.count <= 100):
     print(", ".join(map(str, prime.getRandomArray(options.count))))
 
 if (options.check != None) and (options.check > 1):
     print(prime.isPrime(options.check))
 
-if (options.after != None) and (options.after > 1):
+if (options.after != None) and (options.after > 0):
     print(prime.getNext(options.after))
 
 if (options.interact):
