@@ -37,7 +37,7 @@ public class Gui extends JFrame {
     class OnRandPrimeArrayButClick implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-            String v = JOptionPane.showInputDialog("Введите размер массива (от 1 до 15):");
+            String v = JOptionPane.showInputDialog("Введите размер массива (от 1 до 15):").trim();
 
             try {
                 int length = Integer.valueOf(v);
