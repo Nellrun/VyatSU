@@ -3,13 +3,11 @@
         <mkdir dir="class" />
         <mkdir dir="build" />
     </target>
-
     <target name="compile" depends="make.dirs">
         <javac destDir="class">
             <src path="src"/>
         </javac>
     </target>
-
     <target name="make.jar" depends="compile">
         <jar destfile="build/lab_4.jar">
             <fileset dir="class">
@@ -20,7 +18,6 @@
             </manifest>
         </jar>
     </target>
-
     <target name="done" depends="make.jar,clear.class">
         <echo>Done</echo>
     </target>
