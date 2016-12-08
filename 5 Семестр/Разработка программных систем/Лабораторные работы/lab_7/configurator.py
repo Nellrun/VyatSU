@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-# from configparser import ConfigParser
 import tkinter as tk
 from tkinter import filedialog
 from tkinter import messagebox
@@ -21,28 +20,6 @@ def getClientConfig(root):
     }
 
     return clientConf
-
-# class MainWindow(tk.Tk):
-#     """docstring for MainWindow."""
-#     def __init__(self):
-#         super(MainWindow, self).__init__()
-#         self.title('Конфигуратор')
-#
-#         self.setServerBut = tk.Button(self, text = "Настройка сервера")
-#         self.setClientBut = tk.Button(self, text = "Настройка клиента")
-#
-#         self.setServerBut.bind("<Button-1>", self.onSetServerButClick)
-#         self.setClientBut.bind("<Button-1>", self.onSetClientButClick)
-#
-#         self.setServerBut.pack(side = "top", fill = "both")
-#         self.setClientBut.pack(side = "top", fill = "both")
-#
-#     def onSetServerButClick(self, e):
-#         pass
-#
-#     def onSetClientButClick(self, e):
-#         ClientConfigurator().mainloop()
-#         pass
 
 class ClientConfigurator(tk.Tk):
     """docstring for ClientConfigurator."""
@@ -148,8 +125,6 @@ class ClientConfigurator(tk.Tk):
                 self.whitelistText.insert(tk.END, "\n".join(r["whitelist"]))
             except:
                 pass
-
-
 
 
 m = ClientConfigurator()
