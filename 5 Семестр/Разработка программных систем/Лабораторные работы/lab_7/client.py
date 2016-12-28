@@ -1,4 +1,4 @@
-import socket
+﻿import socket
 from Crypto.Cipher import AES
 import xmlrpc.client
 import re
@@ -7,10 +7,6 @@ import sys
 import urllib.request
 
 def sendData(d, host):
-    # d = aes.decrypt(data.data).decode("UTF-8")
-
-    # print(d)
-
     url = d.split("\r\n")[0]
 
     print(d)
@@ -74,12 +70,8 @@ IV = hexToBinStr(cfg["iv"])
 DESTIP = cfg["serverIP"]
 DESTPORT = cfg["serverPort"]
 WHITELIST = cfg["whitelist"]
-# KEY = b'\xf4r:\xe3\xaf\xca\x1d\xcc%\xe1\xe4).#=\xe1\x1eF\x9d\x94\x83\xd24\xa7\xa0\xc6\x15\xfb\xc0$\xe6H'
-# IV = b'u\xba\xea\x8d\x969x5;\x0e\x17be\xaf\x9c\x16'
 
 targetServer = xmlrpc.client.ServerProxy("http://" + DESTIP + ":" + str(DESTPORT))
-
-aes = AES.new(KEY, AES.MODE_CFB, IV)
 
 s = socket.socket()
 try:
@@ -114,11 +106,17 @@ while True:
     if host in WHITELIST:
         ans = sendData(data.decode("UTF-8"), host)
     else:
-        try:
+	for k, iv in zip(KEY, IV):
+	    aes = AES.new(k, AES.MODE_CFB, iv)
             msgEncrypt = aes.encrypt(data)
-            ans = aes.decrypt(targetServer.sendData(msgEncrypt, host).data)
+        try:
+            ans = targetServer.sendData(msgEncrypt, host).data
         except:
             print("ERROR: Сервер не доступен")
             continue
+
+	for k, iv in zip(KEY, IV):
+	    aes = AES.new(k, AES.MODE_CFB, iv)
+            ans = aes.decrypt(ans)
 
     conn.send(ans)
