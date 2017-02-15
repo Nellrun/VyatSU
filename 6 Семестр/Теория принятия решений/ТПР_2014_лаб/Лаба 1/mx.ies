@@ -1,0 +1,306 @@
+{\rtf1\ansi\ansicpg1251\deff0\deflang1049{\fonttbl{\f0\fswiss\fcharset204 MS Sans Serif;}{\f1\fswiss MS Sans Serif;}{\f2\fswiss\fcharset204 MS Shell Dlg;}{\f3\fswiss\fcharset0 MS Sans Serif;}{\f4\fswiss\fcharset0 MS Shell Dlg;}{\f5\fnil MS Sans Serif;}{\f6\fnil\fcharset204 MS Sans Serif;}}
+\viewkind4\uc1\pard\lang1033\f0\fs16\'c3\'c8\'cf\'ce\'d2\'c5\'c7\'db:\f1 
+\par \lang1049\f2\'cf\'f0\'e8\'ed\'f2\'e5\'f0 \lang1033\f1\{CANON\lang1049\f3 _\lang1033\f1 LBP-3300, Samsung\lang1049\f3 _\lang1033\f1 ML-1615,\lang1049\f3  \lang1033\f1  EPSON\lang1049\f0 _\lang1033\f1 LX-300+, CANON\lang1049\f0 _\lang1033\f1 PIXMA\lang1049\f0 _\lang1033\f1 iP-6210D\lang1049\f0 , CANON_PIXMA_iP-1500, HP_DeskJet_D5063\lang1033\f3 , EPSON\lang1049\f0 _\lang1033\f3 LX-1170\f1\}
+\par 
+\par \f0\'cf\'c0\'d0\'c0\'cc\'c5\'d2\'d0\'db:\f1 
+\par \f0\'d2\'e8\'ef \{\lang1049\f2\'d1\'f2\'f0\'f3\'e9\'ed\'fb\'e9\lang1033\f1 , \lang1049\f0\'cb\f2\'e0\'e7\'e5\'f0\'ed\'fb\'e9\lang1033\f0 , \'cc\'e0\'f2\'f0\'e8\'f7\'ed\'fb\'e9\f1\}
+\par \lang1049\f2\'d1\'ea\'ee\'f0\'ee\'f1\'f2\'fc_\'ef\'e5\'f7\'e0\'f2\'e8 \lang1033\f4\{\lang1049\f2\'ed\'e8\'e7\'ea\'e0\'ff,\lang1033\f4  \lang1049\f2\'f1\'f0\'e5\'e4\'ed\'ff\'ff, \'e2\'fb\'f1\'ee\'ea\'e0\'ff\lang1033\f1\}
+\par \f0\'d6\'e5\'ed\'e0 \{\lang1049\f2\'ec\'e5\'ed\'e5\'e5_3000\lang1033\f0 , \'ee\'f2_3000_\'e4\'ee_5000, \'e1\'ee\'eb\'e5\'e5_5000\}\f1 
+\par \lang1049\f2\'d4\'ee\'f0\'ec\'e0\'f2_\'ef\'e5\'f7\'e0\'f2\'e8 \lang1033\f1\{\lang1049\f0\'c03, \'c04\lang1033\f1\}
+\par \lang1049\f2\'d6\'e2\'e5\'f2\'ed\'ee\'f1\'f2\'fc_\'ef\'e5\'f7\'e0\'f2\'e8 \{\'f6\'e2\'e5\'f2\'ed\'ee\'e9, \'f7/\'e1\}   \lang1033\f1 
+\par \lang1049\f0\'d0\'e0\'e7\'fa\'e5\'ec \lang1033\f1\{\f4 USB\lang1049\f2 , \lang1033\f4 LPT\f1\}
+\par \lang1049\f2\'c3\'e0\'f0\'e0\'ed\'f2\'e8\'ff \lang1033\f1\{12\lang1049\f2\'ec\'e5\'f1, 24\'ec\'e5\'f1\lang1033\f1\}\lang1049\f2  \f5 
+\par \f6\'cf\'c5\'d0\'c5\'cc\'c5\'cd\'cd\'db\'c5:
+\par \f5 
+\par \f6\'d0\'c0\'c7\'c4\'c5\'cb \'cf\'f0\'e8\'ed\'f2\'e5\'f0\'fb
+\par 
+\par NAME \'cf\'f0\'e0\'e2\'e8\'eb\'ee1\lang1033\f4  \lang1049\f6 
+\par IF  \'d2\'e8\'ef \'d1\'f2\'f0\'f3\'e9\'ed\'fb\'e9 
+\par THEN  \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_LBP-3300 [-0,5], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 Samsung_ML-1615 [-0,6], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-300+ [-0,2], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-6210D [0,4],  
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-1500 [0,5], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 HP_DeskJet_D5063 [0,5], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-1170 [-0,5] \lang1033\f2 
+\par ELSE 
+\par END 
+\par 
+\par NAME \'cf\'f0\'e0\'e2\'e8\'eb\'ee11
+\par IF \'d2\'e8\'ef \'cb\'e0\'e7\'e5\'f0\'ed\'fb\'e9 \lang1049\f6 
+\par THEN \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_LBP-3300 [0,5], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 Samsung_ML-1615 [0,6], \lang1033\f4 
+\par \lang1049\f6\'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-6210D [-0,4],  
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-1500 [-0,3], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 HP_DeskJet_D5063 [-0,3],
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-300+ [-0,2], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-1170 [-0,5] \lang1033\f4 
+\par \lang1049\f6 ELSE 
+\par END 
+\par 
+\par NAME \'cf\'f0\'e0\'e2\'e8\'eb\'ee12
+\par IF \'d2\'e8\'ef \'cc\'e0\'f2\'f0\'e8\'f7\'ed\'fb\'e9 
+\par THEN \'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-300+ [0,2], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-1170 [0,5], \lang1033\f4 
+\par \lang1049\f6\'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_LBP-3300 [-0,5], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 Samsung_ML-1615 [-0,6], \lang1033\f4 
+\par \lang1049\f6\'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-6210D [-0,6],  
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-1500 [-0,5], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 HP_DeskJet_D5063 [-0,6]
+\par ELSE 
+\par END 
+\par 
+\par 
+\par NAME \'cf\'f0\'e0\'e2\'e8\'eb\'ee2\lang1033\f4 
+\par \f2 IF \'d1\'ea\'ee\'f0\'ee\'f1\'f2\'fc_\'ef\'e5\'f7\'e0\'f2\'e8 \'ed\'e8\'e7\'ea\'e0\'ff \f4 
+\par \f2 THEN \'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-300+ [0,4], \lang1049\f6 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-1170 [0,5], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-6210D [0,5], \lang1033\f4 
+\par \lang1049\f6\'cf\'f0\'e8\'ed\'f2\'e5\'f0 Samsung_ML-1615 [-0,5], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-1500 [-0,2], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 HP_DeskJet_D5063 [-0,1], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_LBP-3300 [-0,6] \lang1033\f4 
+\par \f2 ELSE 
+\par END 
+\par 
+\par NAME \'cf\'f0\'e0\'e2\'e8\'eb\'ee13
+\par IF \'d1\'ea\'ee\'f0\'ee\'f1\'f2\'fc_\'ef\'e5\'f7\'e0\'f2\'e8 \'f1\'f0\'e5\'e4\'ed\'ff\'ff 
+\par \lang1049\f6 THEN \'cf\'f0\'e8\'ed\'f2\'e5\'f0 Samsung_ML-1615 [0,5], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-1500 [0,2], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 HP_DeskJet_D5063 [0,1], \lang1033\f4 
+\par \f2\'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-300+ [-0,4], \lang1049\f6 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-1170 [-0,5], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-6210D [-0,5],  
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_LBP-3300 [-0,6] 
+\par ELSE 
+\par END 
+\par 
+\par NAME \'cf\'f0\'e0\'e2\'e8\'eb\'ee14
+\par IF \'d1\'ea\'ee\'f0\'ee\'f1\'f2\'fc_\'ef\'e5\'f7\'e0\'f2\'e8 \'e2\'fb\'f1\'ee\'ea\'e0\'ff 
+\par THEN \'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-300+ [-0,4], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-1170 [-0,5], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-6210D [-0,5], \lang1033\f4 
+\par \lang1049\f6\'cf\'f0\'e8\'ed\'f2\'e5\'f0 Samsung_ML-1615 [-0,5], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-1500 [-0,2], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 HP_DeskJet_D5063 [-0,1], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_LBP-3300 [0,6] 
+\par ELSE 
+\par END 
+\par 
+\par NAME \'cf\'f0\'e0\'e2\'e8\'eb\'ee\lang1033\f2 3\lang1049\f6 
+\par IF \'d6\'e5\'ed\'e0 \'ec\'e5\'ed\'e5\'e5_3000 
+\par THEN \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-6210D [0,5], \lang1033\f4 
+\par \f2\'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-1500 [0,2],\f4 
+\par \lang1049\f6\'cf\'f0\'e8\'ed\'f2\'e5\'f0 Samsung_ML-1615 [-0,4], \lang1033\f4 
+\par \f2\'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-300+ [-0,2], \lang1049\f6 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 HP_DeskJet_D5063 [-0,2],   \lang1033\f2 
+\par \lang1049\f6\'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_LBP-3300 [-0,5], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-1170 [-0,2]
+\par \lang1033\f2 ELSE 
+\par END 
+\par 
+\par NAME \'cf\'f0\'e0\'e2\'e8\'eb\'ee15
+\par IF \'d6\'e5\'ed\'e0 \'ee\'f2_3000_\'e4\'ee_5000 \lang1049\f6 
+\par THEN \'cf\'f0\'e8\'ed\'f2\'e5\'f0 Samsung_ML-1615 [0,6], \lang1033\f4 
+\par \f2\'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-300+ [0,1], \lang1049\f6 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 HP_DeskJet_D5063 [0,2], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-6210D [-0,5], \lang1033\f4 
+\par \f2\'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-1500 [-0,2],\f4 
+\par \lang1049\f6\'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_LBP-3300 [-0,5], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-1170 [-0,2]     
+\par ELSE 
+\par END 
+\par 
+\par NAME \'cf\'f0\'e0\'e2\'e8\'eb\'ee16
+\par IF \'d6\'e5\'ed\'e0 \'e1\'ee\'eb\'e5\'e5_5000 
+\par THEN \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-6210D [-0,5], \lang1033\f4 
+\par \f2\'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-1500 [-0,2],\f4 
+\par \lang1049\f6\'cf\'f0\'e8\'ed\'f2\'e5\'f0 Samsung_ML-1615 [-0,4], \lang1033\f4 
+\par \f2\'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-300+ [-0,1], \lang1049\f6 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 HP_DeskJet_D5063 [-0,2], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_LBP-3300 [0,5], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-1170 [0,2]   
+\par ELSE 
+\par END 
+\par \lang1033\f4 
+\par \f2 NAME \'cf\'f0\'e0\'e2\'e8\'eb\'ee4\f4 
+\par \f2 IF \'d4\'ee\'f0\'ec\'e0\'f2_\'ef\'e5\'f7\'e0\'f2\'e8 \'c04 \f4 
+\par \lang1049\f6 THEN \'cf\'f0\'e8\'ed\'f2\'e5\'f0 Samsung_ML-1615 [0,5], \lang1033\f4 
+\par \f2\'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-300+ [0,1], \f4 
+\par \f2\'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-6210D [0,3],\lang1049\f6 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-1500 [0,3],
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_LBP-3300 [-0,4], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-1170 [-0,3],
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 HP_DeskJet_D5063 [-0,4] 
+\par ELSE 
+\par END 
+\par 
+\par NAME \'cf\'f0\'e0\'e2\'e8\'eb\'ee17
+\par IF \'d4\'ee\'f0\'ec\'e0\'f2_\'ef\'e5\'f7\'e0\'f2\'e8 \'c03 
+\par THEN \'cf\'f0\'e8\'ed\'f2\'e5\'f0 Samsung_ML-1615 [-0,5], \lang1033\f4 
+\par \f2\'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-300+ [-0,1], \f4 
+\par \f2\'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-6210D [-0,3],\lang1049\f6 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-1500 [-0,3],
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_LBP-3300 [0,4], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-1170 [0,3],
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 HP_DeskJet_D5063 [0,4]    
+\par ELSE 
+\par END 
+\par 
+\par NAME \'cf\'f0\'e0\'e2\'e8\'eb\'ee\lang1033\f2 5
+\par \lang1049\f6 IF \'d6\'e2\'e5\'f2\'ed\'ee\'f1\'f2\'fc_\'ef\'e5\'f7\'e0\'f2\'e8 \'f7/\'e1 \lang1033\f4 
+\par \f2 THEN \'cf\'f0\'e8\'ed\'f2\'e5\'f0 Samsung_ML-1615 [0,5], \f4 
+\par \lang1049\f6\'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-300+ [0,2],  
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-1170 [0,3], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 HP_DeskJet_D5063 [0,2],
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_LBP-3300 [-0,2], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-6210D [-0,4], 
+\par \lang1033\f2\'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-1500 [-0,5]
+\par \lang1049\f6 ELSE 
+\par END 
+\par 
+\par NAME \'cf\'f0\'e0\'e2\'e8\'eb\'ee18
+\par IF \'d6\'e2\'e5\'f2\'ed\'ee\'f1\'f2\'fc_\'ef\'e5\'f7\'e0\'f2\'e8 \'f6\'e2\'e5\'f2\'ed\'ee\'e9
+\par THEN \'cf\'f0\'e8\'ed\'f2\'e5\'f0 Samsung_ML-1615 [-0,5], \lang1033\f4 
+\par \lang1049\f6\'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-300+ [-0,2],  
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-1170 [-0,3], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 HP_DeskJet_D5063 [-0,2],
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_LBP-3300 [0,2], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-6210D [0,4], 
+\par \lang1033\f2\'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-1500 [0,5] 
+\par ELSE \f4 
+\par END 
+\par 
+\par \f2 NAME \'cf\'f0\'e0\'e2\'e8\'eb\'ee\lang1049\f6 6\lang1033\f4 
+\par \f2 IF \'d0\'e0\'e7\'fa\'e5\'ec USB \f4 
+\par \f2 THEN \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_LBP-3300 [0,4], \lang1049\f6 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-1170 [0,5],
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 HP_DeskJet_D5063 [0,2], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-6210D [0,2]  
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 Samsung_ML-1615 [-0,5] 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-300+ [-0,5] 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-1500 [-0,5] 
+\par ELSE 
+\par END 
+\par 
+\par NAME \f2\'cf\'f0\'e0\'e2\'e8\'eb\'ee21
+\par IF \'d0\'e0\'e7\'fa\'e5\'ec LPT 
+\par \f6 THEN \'cf\'f0\'e8\'ed\'f2\'e5\'f0 Samsung_ML-1615 [0,5], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-300+ [0,4], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-1500 [0,2]  
+\par \lang1033\f2\'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_LBP-3300 [-0,4], \lang1049\f6 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-1170 [-0,5],
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 HP_DeskJet_D5063 [-0,2], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-6210D [-0,2]  
+\par ELSE 
+\par END 
+\par 
+\par NAME \f2\'cf\'f0\'e0\'e2\'e8\'eb\'ee7\f6 
+\par IF \'c3\'e0\'f0\'e0\'ed\'f2\'e8\'ff 24\'ec\'e5\'f1 
+\par THEN \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_LBP-3300 [0,4], \lang1033\f4 
+\par \f2\'cf\'f0\'e8\'ed\'f2\'e5\'f0 Samsung_ML-1615 [0,7],\f4 
+\par \f2\'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-300+ [0,2], \f4 
+\par \f2\'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-1170 [0,3],\f4 
+\par \lang1049\f6\'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-6210D [-0,1], \lang1033\f4 
+\par \f2\'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-1500 [-0,2],\f4 
+\par \f2\'cf\'f0\'e8\'ed\'f2\'e5\'f0 HP_DeskJet_D5063 [-0,4]       \lang1049\f6 
+\par ELSE 
+\par END 
+\par 
+\par NAME \f2\'cf\'f0\'e0\'e2\'e8\'eb\'ee22\f6 
+\par IF \'c3\'e0\'f0\'e0\'ed\'f2\'e8\'ff 12\'ec\'e5\'f1 
+\par THEN \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_LBP-3300 [-0,2], \lang1033\f4 
+\par \f2\'cf\'f0\'e8\'ed\'f2\'e5\'f0 Samsung_ML-1615 [-0,5],\f4 
+\par \f2\'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-300+ [-0,2], \f4 
+\par \f2\'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-1170 [-0,3], \lang1049\f6 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-6210D [0,3], \lang1033\f4 
+\par \f2\'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-1500 [0,4],\f4 
+\par \f2\'cf\'f0\'e8\'ed\'f2\'e5\'f0 HP_DeskJet_D5063 [0,6]   
+\par ELSE \lang1049\f6 
+\par END 
+\par 
+\par NAME \f2\'cf\'f0\'e0\'e2\'e8\'eb\'ee8\f6 
+\par IF \'d2\'e8\'ef \'cb\'e0\'e7\'e5\'f0\'ed\'fb\'e9  
+\par THEN IF \'d6\'e5\'ed\'e0 \'ee\'f2_3000_\'e4\'ee_5000 
+\par THEN \'cf\'f0\'e8\'ed\'f2\'e5\'f0 Samsung_ML-1615 [0,6], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-300+ [-0,4], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-1500 [-0,2]  
+\par \lang1033\f2\'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_LBP-3300 [-0,4], \lang1049\f6 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-1170 [-0,5],
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 HP_DeskJet_D5063 [-0,4], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-6210D [-0,8]  
+\par ELSE 
+\par ELSE 
+\par END 
+\par 
+\par NAME \f2\'cf\'f0\'e0\'e2\'e8\'eb\'ee9\f6 
+\par IF \'d2\'e8\'ef \'d1\'f2\'f0\'f3\'e9\'ed\'fb\'e9 
+\par THEN IF \'d0\'e0\'e7\'fa\'e5\'ec USB 
+\par THEN \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-6210D [0,8], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 Samsung_ML-1615 [-0,6], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-300+ [-0,6], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-1500 [-0,4]  
+\par \lang1033\f2\'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_LBP-3300 [-0,6], \lang1049\f6 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-1170 [-0,7],  \lang1033\f4 
+\par \f2\'cf\'f0\'e8\'ed\'f2\'e5\'f0 HP_DeskJet_D5063 [0,95]  
+\par ELSE \lang1049\f6 
+\par ELSE 
+\par END 
+\par 
+\par NAME \'cf\'f0\'e0\'e2\'e8\'eb\'ee10
+\par IF \'d6\'e5\'ed\'e0 \'ee\'f2_3000_\'e4\'ee_5000
+\par THEN IF \'c3\'e0\'f0\'e0\'ed\'f2\'e8\'ff 24\'ec\'e5\'f1 
+\par THEN \'cf\'f0\'e8\'ed\'f2\'e5\'f0 Samsung_ML-1615 [0,95], \lang1033\f4 
+\par \f2\'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-300+ [0,85],  \lang1049\f6 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-1500 [-0,4],   
+\par \lang1033\f2\'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_LBP-3300 [-0,6], \lang1049\f6 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-1170 [-0,7],
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 HP_DeskJet_D5063 [-0,4], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-6210D [-0,8]  \lang1033\f2 
+\par ELSE \lang1049\f6 
+\par ELSE 
+\par END 
+\par 
+\par NAME \'cf\'f0\'e0\'e2\'e8\'eb\'ee19
+\par IF \'d4\'ee\'f0\'ec\'e0\'f2_\'ef\'e5\'f7\'e0\'f2\'e8 \'c03 
+\par THEN IF NOT \'d2\'e8\'ef \'d1\'f2\'f0\'f3\'e9\'ed\'fb\'e9 
+\par THEN \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_LBP-3300 [0,95], \lang1033\f4 
+\par \lang1049\f6\'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-1170 [0,95],\lang1033\f4 
+\par \lang1049\f6\'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-6210D [0,8], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 Samsung_ML-1615 [-0,6], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-300+ [-0,6], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-1500 [-0,4],   \lang1033\f4 
+\par \f2\'cf\'f0\'e8\'ed\'f2\'e5\'f0 HP_DeskJet_D5063 [0,95] \lang1049\f6 
+\par ELSE 
+\par ELSE 
+\par END 
+\par 
+\par NAME \'cf\'f0\'e0\'e2\'e8\'eb\'ee2\lang1033\f4 0\lang1049\f6 
+\par IF NOT \'d1\'ea\'ee\'f0\'ee\'f1\'f2\'fc_\'ef\'e5\'f7\'e0\'f2\'e8 \'f1\'f0\'e5\'e4\'ed\'ff\'ff 
+\par THEN IF \'c3\'e0\'f0\'e0\'ed\'f2\'e8\'ff 12\'ec\'e5\'f1 
+\par THEN \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-6210D [1,0], \lang1033\f4 
+\par \lang1049\f6\'cf\'f0\'e8\'ed\'f2\'e5\'f0 Samsung_ML-1615 [-0,6], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-300+ [-0,6], 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_PIXMA_iP-1500 [-0,4]  
+\par \lang1033\f2\'cf\'f0\'e8\'ed\'f2\'e5\'f0 CANON_LBP-3300 [-0,6], \lang1049\f6 
+\par \'cf\'f0\'e8\'ed\'f2\'e5\'f0 EPSON_LX-1170 [-0,7],  \lang1033\f4 
+\par \f2\'cf\'f0\'e8\'ed\'f2\'e5\'f0 HP_DeskJet_D5063 [0,95]   \lang1049\f6 
+\par ELSE 
+\par ELSE 
+\par END 
+\par 
+\par 
+\par \'ca\'ce\'cd\'c5\'d6 \'d0\'c0\'c7\'c4\'c5\'cb\'c0 \'cf\'f0\'e8\'ed\'f2\'e5\'f0\'fb
+\par 
+\par 
+\par 
+\par \f5 
+\par 
+\par 
+\par 
+\par 
+\par 
+\par 
+\par 
+\par }
+ 

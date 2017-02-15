@@ -1,0 +1,53 @@
+idProgram
+	idVariableSection:
+		idKeyWord: VAR
+		idIdent: B
+		idSymbol: :
+		idType: INTEGER
+		idSymbol: ;
+		idIdent: C
+		idSymbol: :
+		idType: INTEGER
+		idSymbol: ;
+	idOperationSection:
+		idKeyWord: BEGIN
+		idOperator:
+			idIdent: B
+			idSymbol: :=
+			idIdent: K
+			idSymbol: +
+			idConst: 5
+			idSymbol: ;
+		idOperator:
+			idSymbol: IF
+			idExpression:
+				idIdent: K
+				idSymbol: >
+				idConst: 2
+			idSymbol: THEN
+			idOperator:
+				idIdent: B
+				idSymbol: :=
+				idSymbol: (
+				idExpression:
+					idIdent: K
+					idSymbol: +
+					idConst: 5
+				idSymbol: )
+				idSymbol: -
+				idSymbol: (
+				idExpression:
+					idIdent: K
+					idSymbol: +
+					idConst: 4
+				idSymbol: )
+				idSymbol: ELSE
+				idOperator:
+					idSymbol: CALL
+					idIdent: CCC
+					idSymbol: ;
+		idOperator:
+			idSymbol: CALL
+			idIdent: DDD
+			idSymbol: ;
+		idKeyWord: END.

@@ -1,0 +1,219 @@
+{\rtf1\ansi\ansicpg1251\deff0\deflang1049{\fonttbl{\f0\fswiss\fcharset204 MS Shell Dlg;}{\f1\fnil MS Sans Serif;}}
+\viewkind4\uc1\pard\f0\fs16\'c3\'c8\'cf\'ce\'d2\'c5\'c7\'db:
+\par \'d1\'f2\'ee\'e8\'ec\'ee\'f1\'f2\'fc \{1108, 1154, 1174, 1518, 1604, 4461, 4713\}
+\par \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 \{AMD_A-XP_(3D)_1500+266_MHz_(Socket_A_1333), AMD_A-XP_(3D)_1600+266_MHz_(Socket_A_1400), AMD_K7_(3D)_1000_(Socket_A), AMD_K7_(3D)_1200_(Socket_A), Celeron_1000_FCPGA, Celeron_1200E_FCPGA2, Celeron_533_PPGA, CPU_AMD_K7_700_DURON_(Socket_A), CPU_AMD_K7_800_DURON_(Socket_A), CPU_AMD_K7_850_DURON_(Socket_A), CPU_AMD_K7_900_DURON_(Socket_A), CPU_AMD_K7_950_DURON_(Socket_A), CPU_Pentium_4_1400E_256k_(400MHz_bus)_Int_PGA_BOX, CPU_Pentium_4_1400E_256k_(Socket478_400MHz_bus)_Int_PGA_BOX\}
+\par 
+\par \'cf\'c0\'d0\'c0\'cc\'c5\'d2\'d0\'db:
+\par \'d7\'e0\'f1\'f2\'ee\'f2\'e0 \{1000, 1200, 1200E, 1333, 1400, 1400E, 533, 700, 800, 850, 900, 950\}
+\par \'d4\'e8\'f0\'ec\'e0 \{AMD, Intel\}
+\par \'d1\'ee\'ea\'e5\'f2 \{478, A, FCPGA, FCPGA2, PPGA\}
+\par \'cc\'ee\'e4\'e5\'eb\'fc \{A_XP_(3D), Celeron, K7_(3D), K7_Duron, Pentium_4\}
+\par 
+\par \'cf\'c5\'d0\'c5\'cc\'c5\'cd\'cd\'db\'c5:
+\par X 0
+\par 
+\par \'d0\'c0\'c7\'c4\'c5\'cb \'cf\'d0\'ce\'d6\'c5\'d1\'d1\'ce\'d0\'db
+\par NAME \'ef\'f0\'e0\'e2\'e8\'eb\'ee1
+\par IF \'d4\'e8\'f0\'ec\'e0 AMD
+\par THEN \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 AMD_A-XP_(3D)_1500+266_MHz_(Socket_A_1333) [0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 AMD_A-XP_(3D)_1600+266_MHz_(Socket_A_1400) [0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 AMD_K7_(3D)_1000_(Socket_A) [0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 AMD_K7_(3D)_1200_(Socket_A) [0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_700_DURON_(Socket_A) [0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_800_DURON_(Socket_A) [0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_850_DURON_(Socket_A) [0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_900_DURON_(Socket_A) [0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_950_DURON_(Socket_A) [0,5]
+\par ELSE \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 AMD_A-XP_(3D)_1500+266_MHz_(Socket_A_1333) [-0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 AMD_A-XP_(3D)_1600+266_MHz_(Socket_A_1400) [-0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 AMD_K7_(3D)_1000_(Socket_A) [-0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 AMD_K7_(3D)_1200_(Socket_A) [-0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_700_DURON_(Socket_A) [-0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_800_DURON_(Socket_A) [-0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_850_DURON_(Socket_A) [-0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_900_DURON_(Socket_A) [-0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_950_DURON_(Socket_A) [-0,5]
+\par END
+\par NAME \'ef\'f0\'e0\'e2\'e8\'eb\'ee2
+\par IF \'d4\'e8\'f0\'ec\'e0 Intel
+\par THEN \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 Celeron_1000_FCPGA [0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 Celeron_1200E_FCPGA2 [0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 Celeron_533_PPGA [0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_Pentium_4_1400E_256k_(400MHz_bus)_Int_PGA_BOX [0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_Pentium_4_1400E_256k_(Socket478_400MHz_bus)_Int_PGA_BOX [0,5]
+\par ELSE \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 Celeron_1000_FCPGA [-0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 Celeron_1200E_FCPGA2 [-0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 Celeron_533_PPGA [-0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_Pentium_4_1400E_256k_(400MHz_bus)_Int_PGA_BOX [-0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_Pentium_4_1400E_256k_(Socket478_400MHz_bus)_Int_PGA_BOX [-0,5]
+\par END
+\par NAME \'ef\'f0\'e0\'e2\'e8\'eb\'ee3
+\par IF \'d4\'e8\'f0\'ec\'e0 AMD AND \'d1\'ee\'ea\'e5\'f2 A
+\par THEN \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 AMD_A-XP_(3D)_1500+266_MHz_(Socket_A_1333) [0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 AMD_A-XP_(3D)_1600+266_MHz_(Socket_A_1400) [0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 AMD_K7_(3D)_1000_(Socket_A) [0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 AMD_K7_(3D)_1200_(Socket_A) [0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_700_DURON_(Socket_A) [0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_800_DURON_(Socket_A) [0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_850_DURON_(Socket_A) [0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_900_DURON_(Socket_A) [0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_950_DURON_(Socket_A) [0,5]
+\par  ELSE \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 AMD_A-XP_(3D)_1500+266_MHz_(Socket_A_1333) [-0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 AMD_A-XP_(3D)_1600+266_MHz_(Socket_A_1400) [-0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 AMD_K7_(3D)_1000_(Socket_A) [-0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 AMD_K7_(3D)_1200_(Socket_A) [-0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_700_DURON_(Socket_A) [-0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_800_DURON_(Socket_A) [-0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_850_DURON_(Socket_A) [-0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_900_DURON_(Socket_A) [-0,5],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_950_DURON_(Socket_A) [-0,5]
+\par END
+\par NAME \'ef\'f0\'e0\'e2\'e8\'eb\'ee5
+\par IF \'d4\'e8\'f0\'ec\'e0 AMD AND \'d1\'ee\'ea\'e5\'f2 A AND \'cc\'ee\'e4\'e5\'eb\'fc K7_(3D)
+\par THEN \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 AMD_K7_(3D)_1000_(Socket_A) [0,7],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 AMD_K7_(3D)_1200_(Socket_A) [0,7]
+\par ELSE \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 AMD_K7_(3D)_1000_(Socket_A) [-0,7],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 AMD_K7_(3D)_1200_(Socket_A) [-0,7]
+\par END
+\par NAME \'ef\'f0\'e0\'e2\'e8\'eb\'ee6
+\par IF \'d4\'e8\'f0\'ec\'e0 AMD AND \'d1\'ee\'ea\'e5\'f2 A AND \'cc\'ee\'e4\'e5\'eb\'fc K7_Duron
+\par THEN \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_700_DURON_(Socket_A) [0,7],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_800_DURON_(Socket_A) [0,7],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_850_DURON_(Socket_A) [0,7],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_900_DURON_(Socket_A) [0,7],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_950_DURON_(Socket_A) [0,7]
+\par ELSE \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_700_DURON_(Socket_A) [-0,7],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_800_DURON_(Socket_A) [-0,7],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_850_DURON_(Socket_A) [-0,7],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_900_DURON_(Socket_A) [-0,7],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_950_DURON_(Socket_A) [-0,7]
+\par END
+\par NAME \'ef\'f0\'e0\'e2\'e8\'eb\'ee7
+\par IF \'d4\'e8\'f0\'ec\'e0 AMD AND \'d1\'ee\'ea\'e5\'f2 A AND \'cc\'ee\'e4\'e5\'eb\'fc A_XP_(3D)
+\par THEN \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 AMD_A-XP_(3D)_1500+266_MHz_(Socket_A_1333) [0,7],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 AMD_A-XP_(3D)_1600+266_MHz_(Socket_A_1400) [0,7]
+\par ELSE \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 AMD_A-XP_(3D)_1500+266_MHz_(Socket_A_1333) [-0,7],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 AMD_A-XP_(3D)_1600+266_MHz_(Socket_A_1400) [-0,7]
+\par END 
+\par NAME \'ef\'f0\'e0\'e2\'e8\'eb\'ee8 
+\par IF \'d4\'e8\'f0\'ec\'e0 Intel AND \'d1\'ee\'ea\'e5\'f2 478
+\par THEN \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_Pentium_4_1400E_256k_(400MHz_bus)_Int_PGA_BOX [0,5], 
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_Pentium_4_1400E_256k_(Socket478_400MHz_bus)_Int_PGA_BOX  [0,5]  
+\par ELSE \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_Pentium_4_1400E_256k_(400MHz_bus)_Int_PGA_BOX [-0,5], 
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_Pentium_4_1400E_256k_(Socket478_400MHz_bus)_Int_PGA_BOX  [-0,5]  
+\par END
+\par NAME \'ef\'f0\'e0\'e2\'e8\'eb\'ee9
+\par IF \'d4\'e8\'f0\'ec\'e0 Intel AND \'d1\'ee\'ea\'e5\'f2 478 AND \'cc\'ee\'e4\'e5\'eb\'fc Pentium_4
+\par THEN \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_Pentium_4_1400E_256k_(400MHz_bus)_Int_PGA_BOX [0,7],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_Pentium_4_1400E_256k_(Socket478_400MHz_bus)_Int_PGA_BOX [0,7]  
+\par  ELSE \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_Pentium_4_1400E_256k_(400MHz_bus)_Int_PGA_BOX [-0,7],
+\par  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_Pentium_4_1400E_256k_(Socket478_400MHz_bus)_Int_PGA_BOX [-0,7]  
+\par END
+\par NAME \'ef\'f0\'e0\'e2\'e8\'eb\'ee10
+\par IF \'d4\'e8\'f0\'ec\'e0 Intel AND \'d1\'ee\'ea\'e5\'f2 478 AND \'cc\'ee\'e4\'e5\'eb\'fc Pentium_4 AND \'d7\'e0\'f1\'f2\'ee\'f2\'e0 1400E
+\par THEN \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_Pentium_4_1400E_256k_(Socket478_400MHz_bus)_Int_PGA_BOX [0,9],
+\par  =X:=4713
+\par  ELSE \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_Pentium_4_1400E_256k_(Socket478_400MHz_bus)_Int_PGA_BOX [-0,9],
+\par  =X:=0
+\par END
+\par NAME \'ef\'f0\'e0\'e2\'e8\'eb\'ee11
+\par IF \'d4\'e8\'f0\'ec\'e0 Intel AND \'d1\'ee\'ea\'e5\'f2 PPGA
+\par THEN \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 Celeron_533_PPGA [0,9],
+\par  =X:=1174 
+\par ELSE \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 Celeron_533_PPGA [-0,9],
+\par  =X:=0
+\par END
+\par NAME \'ef\'f0\'e0\'e2\'e8\'eb\'ee12
+\par IF \'d4\'e8\'f0\'ec\'e0 Intel AND \'d1\'ee\'ea\'e5\'f2 FCPGA
+\par THEN \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 Celeron_1000_FCPGA [0,9],
+\par  =X:=2378 
+\par  ELSE \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 Celeron_1000_FCPGA [-0,9], 
+\par  =X:=0
+\par 
+\par END 
+\par NAME \'ef\'f0\'e0\'e2\'e8\'eb\'ee13
+\par IF \'d4\'e8\'f0\'ec\'e0 Intel AND \'d1\'ee\'ea\'e5\'f2 FCPGA2 
+\par THEN \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 Celeron_1200E_FCPGA2 [0,9],
+\par  =X:=3191 
+\par  ELSE \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 Celeron_1200E_FCPGA2 [-0,9],  
+\par  =X:=0
+\par END 
+\par NAME \'ef\'f0\'e0\'e2\'e8\'eb\'ee14
+\par IF \'d4\'e8\'f0\'ec\'e0 Intel AND \'d1\'ee\'ea\'e5\'f2 478 AND \'cc\'ee\'e4\'e5\'eb\'fc Pentium_4 AND \'d7\'e0\'f1\'f2\'ee\'f2\'e0 1400E 
+\par THEN \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_Pentium_4_1400E_256k_(400MHz_bus)_Int_PGA_BOX [0,9],
+\par  =X:=4461 
+\par  ELSE \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_Pentium_4_1400E_256k_(400MHz_bus)_Int_PGA_BOX [-0,9],
+\par  =X:=0 
+\par END 
+\par NAME \'ef\'f0\'e0\'e2\'e8\'eb\'ee15
+\par IF \'d4\'e8\'f0\'ec\'e0 AMD AND  \'d1\'ee\'ea\'e5\'f2 A AND \'cc\'ee\'e4\'e5\'eb\'fc A_XP_(3D) AND \'d7\'e0\'f1\'f2\'ee\'f2\'e0 1333 
+\par THEN \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 AMD_A-XP_(3D)_1500+266_MHz_(Socket_A_1333) [0,9],
+\par  =X:=4031
+\par  ELSE \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 AMD_A-XP_(3D)_1500+266_MHz_(Socket_A_1333) [-0,9],
+\par  =X:=0
+\par END 
+\par NAME \'ef\'f0\'e0\'e2\'e8\'eb\'ee16
+\par IF \'d4\'e8\'f0\'ec\'e0 AMD AND  \'d1\'ee\'ea\'e5\'f2 A AND \'cc\'ee\'e4\'e5\'eb\'fc A_XP_(3D) AND \'d7\'e0\'f1\'f2\'ee\'f2\'e0 1400 
+\par THEN \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 AMD_A-XP_(3D)_1600+266_MHz_(Socket_A_1400) [0,9],
+\par  =X:=4263
+\par  ELSE \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 AMD_A-XP_(3D)_1600+266_MHz_(Socket_A_1400) [-0,9],
+\par  =X:=0
+\par END 
+\par NAME \'ef\'f0\'e0\'e2\'e8\'eb\'ee17
+\par IF \'d4\'e8\'f0\'ec\'e0 AMD AND  \'d1\'ee\'ea\'e5\'f2 A AND \'cc\'ee\'e4\'e5\'eb\'fc K7_Duron AND \'d7\'e0\'f1\'f2\'ee\'f2\'e0 700 
+\par THEN \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_700_DURON_(Socket_A) [0,9],
+\par  =X:=1154
+\par  ELSE \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_700_DURON_(Socket_A) [-0,9],
+\par  =X:=0
+\par END 
+\par NAME \'ef\'f0\'e0\'e2\'e8\'eb\'ee18
+\par IF \'d4\'e8\'f0\'ec\'e0 AMD AND  \'d1\'ee\'ea\'e5\'f2 A AND \'cc\'ee\'e4\'e5\'eb\'fc K7_Duron AND \'d7\'e0\'f1\'f2\'ee\'f2\'e0 800 
+\par THEN \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_800_DURON_(Socket_A) [0,9],
+\par  =X:=1518
+\par  ELSE \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_800_DURON_(Socket_A) [-0,9],
+\par  =X:=0
+\par END 
+\par NAME \'ef\'f0\'e0\'e2\'e8\'eb\'ee19
+\par IF \'d4\'e8\'f0\'ec\'e0 AMD AND  \'d1\'ee\'ea\'e5\'f2 A AND \'cc\'ee\'e4\'e5\'eb\'fc K7_Duron AND \'d7\'e0\'f1\'f2\'ee\'f2\'e0 850 
+\par THEN \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_850_DURON_(Socket_A) [0,9],
+\par  =X:=1604
+\par  ELSE \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_850_DURON_(Socket_A) [-0,9],
+\par  =X:=0
+\par END 
+\par NAME \'ef\'f0\'e0\'e2\'e8\'eb\'ee20
+\par IF \'d4\'e8\'f0\'ec\'e0 AMD AND  \'d1\'ee\'ea\'e5\'f2 A AND \'cc\'ee\'e4\'e5\'eb\'fc K7_Duron AND \'d7\'e0\'f1\'f2\'ee\'f2\'e0 900  
+\par THEN \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_900_DURON_(Socket_A) [0,9],
+\par  =X:=1654
+\par  ELSE \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_900_DURON_(Socket_A) [-0,9],
+\par  =X:=0
+\par END 
+\par NAME \'ef\'f0\'e0\'e2\'e8\'eb\'ee21
+\par IF \'d4\'e8\'f0\'ec\'e0 AMD AND  \'d1\'ee\'ea\'e5\'f2 A AND \'cc\'ee\'e4\'e5\'eb\'fc K7_Duron AND \'d7\'e0\'f1\'f2\'ee\'f2\'e0 950   
+\par THEN \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_950_DURON_(Socket_A) [0,9],
+\par  =X:=1782
+\par  ELSE \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 CPU_AMD_K7_950_DURON_(Socket_A) [-0,9],
+\par  =X:=0
+\par END 
+\par NAME \'ef\'f0\'e0\'e2\'e8\'eb\'ee22
+\par IF \'d4\'e8\'f0\'ec\'e0 AMD AND  \'d1\'ee\'ea\'e5\'f2 A AND \'cc\'ee\'e4\'e5\'eb\'fc K7_(3D) AND \'d7\'e0\'f1\'f2\'ee\'f2\'e0 1000 
+\par THEN  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 AMD_K7_(3D)_1000_(Socket_A) [0,9],
+\par  =X:=2662
+\par  ELSE \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 AMD_K7_(3D)_1000_(Socket_A) [-0,9],
+\par  =X:=0
+\par END 
+\par NAME \'ef\'f0\'e0\'e2\'e8\'eb\'ee23
+\par IF \'d4\'e8\'f0\'ec\'e0 AMD AND  \'d1\'ee\'ea\'e5\'f2 A AND \'cc\'ee\'e4\'e5\'eb\'fc K7_(3D) AND \'d7\'e0\'f1\'f2\'ee\'f2\'e0 1200  
+\par THEN \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 AMD_K7_(3D)_1200_(Socket_A) [0,9],
+\par  =X:=3258
+\par ELSE  \'cf\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0 AMD_K7_(3D)_1200_(Socket_A) [-0,9],
+\par  =X:=0
+\par END 
+\par \'ca\'ce\'cd\'c5\'d6 \'d0\'c0\'c7\'c4\'c5\'cb\'c0 \'cf\'d0\'ce\'d6\'c5\'d1\'d1\'ce\'d0\'db
+\par 
+\par 
+\par 
+\par 
+\par 
+\par \f1 
+\par }
+ 
