@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DependencyCheckerConfiguration>
+  <title>Windows Azure Platform Kit - Introduction to Windows Azure</title>
+  <previews>
+    <preview name="Check lab dependencies" description="Check required components"></preview>
+    <preview name="Install code snippets" description="Installs Visual Studio code snippets for the lab exercises"></preview>
+  </previews>
+  <tasks>
+    <task description="Install Visual Studio Code Snippets for the lab" scriptName=".\Scripts\InstallCodeSnippets.cmd" displayConsole="true"/>
+  </tasks>
+  <dependencies>
+    <os type="Vista" buildNumber="6000">
+      <dependency
+                    value=".\Scripts\Dependencies\Check\CheckVistaSp1.ps1"
+                    enabled="true"
+                    optional="false"
+                    title="Vista SP1"
+                    explanation="Vista Service Pack 1 is required."
+                    scriptName=""
+                    downloadUrl="http://www.microsoft.com/windows/windows-vista/quick-start/sp1.aspx" />
+    </os>
+    <os type="Vista;Server" buildNumber="6001;6002;7600">
+      
+	  <dependency
+                    value=".\Scripts\Dependencies\Check\CheckNET4.ps1"
+                    enabled="true"
+                    optional="false"
+                    title="Microsoft .NET Framework 4.0"
+                    explanation="Download and install the Microsoft .NET Framework 4.0"
+                    scriptName=""
+                    downloadUrl="http://www.microsoft.com/downloads/details.aspx?FamilyID=a9ef9a95-58d2-4e51-a4b7-bea3cc6962cb"/>
+	  
+      <dependency
+                    value=".\Scripts\Dependencies\Check\CheckVS2010.ps1"
+                    enabled="true"
+                    optional="false"
+                    title="Microsoft Visual Studio 2010"
+                    explanation="Install Microsoft Visual Studio 2010"
+                    scriptName=""
+                    downloadUrl="http://msdn.microsoft.com/vstudio/products/" />
+      
+      <dependency
+                    value=".\Scripts\Dependencies\Check\CheckWmiIis7.ps1"
+                    enabled="true"
+                    optional="false"
+                    title="Microsoft IIS 7.0"
+                    explanation="Enable the Internet Information Services 7 feature."
+                    scriptName=".\Scripts\Dependencies\Setup\install-iis.bat" />
+<dependency
+                          value=".\scripts\Dependencies\Check\CheckIISStaticContent.ps1"
+                          enabled="true"
+                          optional="false"
+                          title="IIS Static Content"
+                          explanation="Install the IIS Static Content."
+                          scriptName=".\scripts\Dependencies\Setup\install-StaticContent.bat" />
+
+      <dependency
+                    value=".\Scripts\Dependencies\Check\CheckAzureTools13ForVS2010.ps1"
+                    enabled="true"
+                    optional="false"
+                    title="Windows Azure Tools for Microsoft Visual Studio 2010 1.3 or higher"
+                    explanation="Download and install the Windows Azure Tools (Installation includes the Windows Azure SDK)."
+                    scriptName=""
+                    downloadUrl="http://go.microsoft.com/fwlink/?LinkID=128752" />
+      
+  
+    </os>
+  </dependencies>
+<errorMessages>
+    <errorMessage error="OperatingSystemNotSupported">
+      <![CDATA[<b><p><b>The automatic set up can not proceed.</b></br>The lab you are trying to set up has not been tested in your environment, and some features may not work as expected.</br>You can configure your environment manually installing the prerequisites shown in the lab's overview.</p><br/>]]>
+    </errorMessage>
+  </errorMessages>
+</DependencyCheckerConfiguration>
