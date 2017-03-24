@@ -1,0 +1,3 @@
+﻿  MainForm.obj : /DEBUG:FASTLINK не поддерживается, если присутствует управляемый код; выполняется перезапуск компоновки с /DEBUG:FULL
+  mnist.vcxproj -> C:\Users\Danill\SkyDrive\VyatSU\6 Семестр\Параллельные вычисления на графических процессорах\Лабораторные работы\mnist\mnist\Debug\mnist.exe
+  mnist.vcxproj -> C:\Users\Danill\SkyDrive\VyatSU\6 Семестр\Параллельные вычисления на графических процессорах\Лабораторные работы\mnist\mnist\Debug\mnist.pdb (Partial PDB)

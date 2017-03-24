@@ -1,0 +1,9 @@
+:Base bde32.hlp>main
+:Title Borland Database Engine Online Reference
+:Index Borland Database Engine Online Reference=BDE32.HLP
+:Link bde32.hlp
+:Link bdeadmin.hlp
+:Link datapump.hlp
+:Link localsql.hlp
+:Link sqllnk32.hlp
+:INCLUDE BDE32.TOC

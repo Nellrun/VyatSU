@@ -1,0 +1,22 @@
+:Base NeuroPro
+:Title Справка NeuroPro 0.25
+:Index Справка NeuroPro 0.25=NeuroPro.hlp
+1 О программе=HELP_ABOUTPROGRAM
+1 Условия распространения=HELP_DISTRIBUTION
+1 Введение в нейронные сети
+2 Нейронные сети=HELP_NEURALNETS
+2 Архитектура нейронной сети=HELP_STRUCTURE
+2 Правила подачи и снятия сигналов=HELP_INOUT
+2 Обучение нейронных сетей=HELP_TRAINING
+2 Вычисление значимости входных сигналов и элементов сети=HELP_SENS
+2 Упрощение нейронных сетей=HELP_PRUNING
+1 Работа с программой
+2 Главное меню=HELP_MENU
+2 Создание нейропроекта=HELP__CREATENEWPROJECT
+2 Подключение файла данных=HELP__OPENDB
+2 Создание нейронной сети=HELP__CREATENET
+2 Обучение нейронной сети=HELP__TRAINNET
+2 Тестирование нейронной сети=HELP__TESTNET
+2 Вычисление показателей значимости входных сигналов сети=HELP__SENS
+2 Упрощение нейронной сети=HELP__PRUNING
+2 Вербализация нейронной сети=HELP__VERBAL

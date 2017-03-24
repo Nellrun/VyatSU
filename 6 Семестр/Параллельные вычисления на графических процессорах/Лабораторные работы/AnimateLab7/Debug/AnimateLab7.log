@@ -1,0 +1,5 @@
+﻿  MainForm.cpp
+MainForm.cpp(7): warning C4829: Возможно, неправильные параметры функции main. Рекомендуемый вариант - "int main(Platform::Array<Platform::String^>^ argv)"
+  MainForm.obj : /DEBUG:FASTLINK не поддерживается, если присутствует управляемый код; выполняется перезапуск компоновки с /DEBUG:FULL
+  AnimateLab7.vcxproj -> C:\Users\Danill\SkyDrive\VyatSU\6 Семестр\Параллельные вычисления на графических процессорах\Лабораторные работы\AnimateLab7\Debug\AnimateLab7.exe
+  AnimateLab7.vcxproj -> C:\Users\Danill\SkyDrive\VyatSU\6 Семестр\Параллельные вычисления на графических процессорах\Лабораторные работы\AnimateLab7\Debug\AnimateLab7.pdb (Partial PDB)

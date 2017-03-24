@@ -1,0 +1,7 @@
+[RegistryDelete1]
+UsageKey=HKEY_LOCAL_MACHINE\Software\Borland\Database Engine\UseCount
+DeleteKey1=HKEY_LOCAL_MACHINE\Software\Borland\Database Engine
+DeleteKey2=HKEY_LOCAL_MACHINE\Software\Borland\BLW32
+[Admin Install]
+Admin=1
+Error=This installation can only be uninstalled by a user with administrative privileges. Uninstallation will now exit.
