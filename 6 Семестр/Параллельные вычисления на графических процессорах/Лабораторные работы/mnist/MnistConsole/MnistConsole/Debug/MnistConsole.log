@@ -1,2 +1,10 @@
 ﻿  main.cpp
+c:\users\danill\skydrive\vyatsu\6 семестр\параллельные вычисления на графических процессорах\лабораторные работы\mnist\mnistconsole\mnistconsole\matrix.h(106): warning C4554: &: проверьте порядок применения операторов на наличие ошибки; для четкого задания порядка используйте скобки
+c:\users\danill\skydrive\vyatsu\6 семестр\параллельные вычисления на графических процессорах\лабораторные работы\mnist\mnistconsole\mnistconsole\matrix.h(110): warning C4554: &: проверьте порядок применения операторов на наличие ошибки; для четкого задания порядка используйте скобки
+c:\users\danill\skydrive\vyatsu\6 семестр\параллельные вычисления на графических процессорах\лабораторные работы\mnist\mnistconsole\mnistconsole\matrix.h(86): warning C4554: &: проверьте порядок применения операторов на наличие ошибки; для четкого задания порядка используйте скобки
+  c:\users\danill\skydrive\vyatsu\6 семестр\параллельные вычисления на графических процессорах\лабораторные работы\mnist\mnistconsole\mnistconsole\logisticregression.h(54): note: см. ссылку на создание экземпляров функции шаблон при компиляции "matrix::Matrix *matrix::mul<int>(matrix::Matrix *,t,int)"
+          with
+          [
+              t=int
+          ]
   MnistConsole.vcxproj -> C:\Users\Danill\SkyDrive\VyatSU\6 Семестр\Параллельные вычисления на графических процессорах\Лабораторные работы\mnist\MnistConsole\Debug\MnistConsole.exe

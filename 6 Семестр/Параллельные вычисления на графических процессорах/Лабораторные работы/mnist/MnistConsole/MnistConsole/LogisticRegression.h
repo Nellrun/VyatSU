@@ -9,6 +9,14 @@ double sigmoid(double a) {
 	return 1.0 / (1.0 + exp(-a));
 }
 
+double lin(double a) {
+	return a > 0 ? 1 : 0;
+}
+
+double th(double a) {
+	return (tanh(a) + 1) / 2;
+}
+
 double a1(int i) {
 	return 1.0 / i;
 }
@@ -36,17 +44,19 @@ public:
 		return map(sum(matmul(X, W, false), b, false), *this->activate);
 	}
 
-	void fit(Matrix* X, Matrix* Y) {
-		for (int i = 0; i < X->lines; i++) {
-			Matrix* x = getLine(X, i);
-			Matrix* y = getLine(Y, i);
-			Matrix* d = sub(this->predict(x), y, false);
-			Matrix* t_x = transpose(x, false);
-			this->W = sub(this->W, mul(matmul(t_x, d, false), 1 / (i + 1)));
-			this->b = sub(this->b, matmul(ones(1, x->lines), d));
-			clear(t_x);
-			clear(x);
-			clear(y);
+	void fit(Matrix* X, Matrix* Y, int epoch=10) {
+		for (int e = 0; e < epoch; e++) {
+			for (int i = 0; i < X->lines; i++) {
+				Matrix* x = getLine(X, i);
+				Matrix* y = getLine(Y, i);
+				Matrix* d = sub(this->predict(x), y, 0);
+				Matrix* t_x = transpose(x, 0);
+				this->W = sub(this->W, mul(matmul(t_x, d, 1), 1 / (e + 1)));
+				this->b = sub(this->b, mul(matmul(ones(1, x->lines), d), learnCoeff(e + 1)));
+				//clear(t_x);
+				clear(x);
+				clear(y);
+			}
 		}
 		//less(X, y);
 	}

@@ -18,16 +18,16 @@ namespace matrix {
 	Matrix* randoms(int lines, int cols, double min, double max, int seed);
 
 	template <typename t>
-	Matrix* mul(Matrix* a, t b, bool clear);
+	Matrix* mul(Matrix* a, t b, int clear);
 
-	Matrix* sum(Matrix* a, Matrix* b, bool clear);
-	Matrix* sub(Matrix* a, Matrix* b, bool clear);
-	Matrix* mul(Matrix* a, Matrix* b, bool clear);
-	Matrix* matmul(Matrix* a, Matrix* b, bool clear);
+	Matrix* sum(Matrix* a, Matrix* b, int clear);
+	Matrix* sub(Matrix* a, Matrix* b, int clear);
+	Matrix* mul(Matrix* a, Matrix* b, int clear);
+	Matrix* matmul(Matrix* a, Matrix* b, int clear);
 
-	Matrix* transpose(Matrix* a, bool clear);
+	Matrix* transpose(Matrix* a, int clear);
 
-	Matrix* map(Matrix* a, mapFunc f, bool clear);
+	Matrix* map(Matrix* a, mapFunc f, int clear);
 	Matrix* getLine(Matrix* a, int line);
 	Matrix* getMax(Matrix* a);
 
@@ -74,7 +74,7 @@ namespace matrix {
 	}
 
 	template <typename t>
-	Matrix* mul(Matrix* a, t b, bool clr=true) {
+	Matrix* mul(Matrix* a, t b, int clr=3) {
 		Matrix* m = zeros(a->lines, a->cols);
 
 		for (int i = 0; i < a->lines; i++) {
@@ -83,14 +83,14 @@ namespace matrix {
 			}
 		}
 
-		if (clr) {
+		if (clr & 1 == 1) {
 			clear(a);
 		}
 
 		return m;
 	}
 
-	Matrix* sum(Matrix* a, Matrix* b, bool clr=true) {
+	Matrix* sum(Matrix* a, Matrix* b, int clr=3) {
 		if (a->cols != b->cols) {
 			return NULL;
 		}
@@ -103,15 +103,18 @@ namespace matrix {
 			}
 		}
 
-		if (clr) {
+		if (clr & 1 == 1) {
 			clear(a);
+		}
+
+		if (clr & 2 == 1) {
 			clear(b);
 		}
 
 		return m;
 	}
 
-	Matrix* sub(Matrix* a, Matrix* b, bool clr=true) {
+	Matrix* sub(Matrix* a, Matrix* b, int clr=3) {
 		if (a->cols != b->cols) {
 			return NULL;
 		}
@@ -124,15 +127,18 @@ namespace matrix {
 			}
 		}
 
-		if (clr) {
+		if (clr & 1) {
 			clear(a);
+		}
+
+		if (clr & 2) {
 			clear(b);
 		}
 
 		return m;
 	}
 
-	Matrix* mul(Matrix* a, Matrix* b, bool clr=true) {
+	Matrix* mul(Matrix* a, Matrix* b, int clr=3) {
 		if (a->cols != b->cols) {
 			return NULL;
 		}
@@ -145,15 +151,18 @@ namespace matrix {
 			}
 		}
 
-		if (clr) {
+		if (clr & 1) {
 			clear(a);
+		}
+
+		if (clr & 2) {
 			clear(b);
 		}
 
 		return m;
 	}
 
-	Matrix* matmul(Matrix* a, Matrix* b, bool clr=true) {
+	Matrix* matmul(Matrix* a, Matrix* b, int clr=3) {
 		if (a->cols != b->lines) {
 			return NULL;
 		}
@@ -168,15 +177,18 @@ namespace matrix {
 			}
 		}
 
-		if (clr) {
+		if (clr & 1) {
 			clear(a);
+		}
+
+		if (clr & 2) {
 			clear(b);
 		}
 
 		return m;
 	}
 
-	Matrix* transpose(Matrix* a, bool clr=true) {
+	Matrix* transpose(Matrix* a, int clr=3) {
 		Matrix* m = zeros(a->cols, a->lines);
 
 		for (int i = 0; i < a->lines; i++) {
@@ -185,14 +197,14 @@ namespace matrix {
 			}
 		}
 
-		if (clr) {
+		if (clr & 1) {
 			clear(a);
 		}
 
 		return m;
 	}
 
-	Matrix* map(Matrix* a, mapFunc f, bool clr=true) {
+	Matrix* map(Matrix* a, mapFunc f, int clr=3) {
 		Matrix* m = zeros(a->lines, a->cols);
 
 		for (int i = 0; i < a->lines; i++) {
@@ -201,7 +213,7 @@ namespace matrix {
 			}
 		}
 
-		if (clr) {
+		if (clr & 1) {
 			clear(a);
 		}
 
