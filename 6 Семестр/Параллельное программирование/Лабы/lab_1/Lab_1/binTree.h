@@ -42,30 +42,37 @@ public:
 			return;
 		}
 
-		do
-		{
-			if (s->getCost() >= n->elem->getCost()) {
-				if (n->right == NULL) {
-					n->right = new Node();
-					n->right->elem = s;
-					break;
-				}
-				else {
-					n = n->right;
-				}
-			}
-			else {
-				if (n->left == NULL) {
-					n->left = new Node();
-					n->left->elem = s;
-					break;
-				}
-				else {
-					n = n->left;
-				}
-			}
+//#pragma omp parallel 
+//		{
+//#pragma omp critical
+//			{
+//
+				do
+				{
+					if (s->getCost() >= n->elem->getCost()) {
+						if (n->right == NULL) {
+							n->right = new Node();
+							n->right->elem = s;
+							break;
+						}
+						else {
+							n = n->right;
+						}
+					}
+					else {
+						if (n->left == NULL) {
+							n->left = new Node();
+							n->left->elem = s;
+							break;
+						}
+						else {
+							n = n->left;
+						}
+					}
 
-		} while (true);
+				} while (true);
+		//	}
+		//}
 	}
 
 	void del(State* s) {
@@ -144,16 +151,17 @@ public:
 	}
 
 	bool cmp(State* a, State* b) {
-		//Map* am = a->getMap();
-		//Map* bm = b->getMap();
-		//int len = am->getCols() * am->getLines();
-		//for (int i = 0; i < len; i++) {
-		//	if (am->map[i] != bm->map[i]) return false;
-		//}
-		//return true;
+		Map* am = a->getMap();
+		Map* bm = b->getMap();
+		int len = am->getCols() * am->getLines();
+//#pragma omp parallel for
+		for (int i = 0; i < len; i++) {
+			if (am->map[i] != bm->map[i]) return false;
+		}
+		return true;
 
-		if (a->getCost() == b->getCost()) return true;
-		else return false;
+		//if (a->getCost() < b->getCost()) return true;
+		//else return false;
 	}
 
 	State* find(State* s) {

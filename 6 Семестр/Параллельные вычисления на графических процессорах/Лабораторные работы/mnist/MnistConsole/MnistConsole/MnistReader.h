@@ -46,7 +46,7 @@ public:
 
 		for (int y = 0; y < 28; y++) {
 			for (int x = 0; x < 28; x++) {
-				image[x][y] = file.get();// +((double)rand() / RAND_MAX) * 1.5;
+				image[x][y] = file.get();// +((float)rand() / RAND_MAX) * 1.5;
 			}
 		}
 
@@ -73,12 +73,12 @@ public:
 		return arr;
 	}
 
-	double* getMatrix() {
-		double* arr = new double[28 * 28];
+	float* getMatrix() {
+		float* arr = new float[28 * 28];
 
 		for (int i = 0; i < 28 * 28; i++)
 		{
-			arr[i] = (double) image[i / 28][i % 28] / 255;
+			arr[i] = (float) image[i / 28][i % 28] / 255;
 		}
 
 		return arr;

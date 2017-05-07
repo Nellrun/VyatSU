@@ -172,7 +172,7 @@
 \par 
 \par NAME \'cf13
 \par IF \'d1\'ea\'ee\'f0\'ee\'f1\'f2\'fc_\'f0\'e0\'e7\'f0\'e0\'e1\'ee\'f2\'ea\'e8 \'d1\'f0\'e5\'e4\'ed\'ff\'ff
-\par \lang1033 THEN \'df\'e7\'fb\'ea C++  [-0,25],
+\par \lang1033 THEN \'df\'e7\'fb\'ea C++  [0,25],
 \par \lang1049\'df\'e7\'fb\'ea Java [0,85],
 \par \'df\'e7\'fb\'ea Python [-0,2],
 \par \'df\'e7\'fb\'ea Pascal [-0,1],

@@ -3,6 +3,7 @@
 #include "map.h"
 
 int costFunc(Map* map);
+//void costFunc(Map* map, int&, int&);
 unsigned int calcHash(Map* map);
 
 class Test {
@@ -31,10 +32,11 @@ public:
 	State(Map* map, State* parent) {
 		this->steps = parent == NULL ? 0 : parent->getSteps() + 1;
 		this->cost = costFunc(map);
+		//costFunc(map, this->cost, this->cost);
 		this->parent = parent;
 		this->map = map;
 		this->hash = calcHash(map);
-		this->f = this->steps + this->cost;
+		//this->f = this->steps + this->cost;
 	}
 
 	State() {}
@@ -109,6 +111,31 @@ int costFunc(Map* map) {
 
 	return sum;
 }
+
+//void costFunc(Map* map, int &cost, int &f) {
+//	int len = map->lines*map->cols;
+//	//int sum = 0;
+//	cost = 0;
+//	f = 0;
+//
+//	int x;
+//
+//	for (x = 0; map->map[x] != 0; ++x){}
+//
+//	for (int i = 0; i < len; ++i)
+//	{
+//		if (map->map[i] == 0) continue;
+//		int dx = abs((i % map->cols) - ((map->map[i] - 1) % map->cols));
+//		int dy = abs((i / map->cols) - ((map->map[i] - 1) / map->cols));
+//		cost += dx + dy;
+//
+//		dx = abs((i % map->cols) - ((x) % map->cols));
+//		dy = abs((i / map->cols) - ((x) / map->cols));
+//		f += dx + dy;
+//	}
+//
+//	f += cost;
+//}
 
 unsigned int calcHash(Map* map) {
 	int len = map->lines * map->cols;

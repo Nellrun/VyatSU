@@ -1,0 +1,303 @@
+{\rtf1\ansi\ansicpg1251\deff0\deflang1049{\fonttbl{\f0\fnil\fcharset204 MS Sans Serif;}{\f1\fswiss\fprq2\fcharset204 Tahoma;}{\f2\fswiss\fcharset0 Tahoma;}{\f3\fswiss\fcharset204 Tahoma;}}
+\viewkind4\uc1\pard\sa200\sl276\slmult1\f0\fs16\'c3\'c8\'cf\'ce\'d2\'c5\'c7\'db:\f1 
+\par \'df\'e7\'fb\'ea \{\lang1033 C\lang1049 ++, \lang1033 Java\lang1049 , \lang1033 Python\lang1049 , \lang1033 Pascal\lang1049 , \lang1033 C\lang1049 #, \lang1033 JS\lang1049 , \lang1033 Ruby\lang1049 , \lang1033 PHP\lang1049\}
+\par 
+\par \f0\'cf\'c0\'d0\'c0\'cc\'c5\'d2\'d0\'db:
+\par \f1\'d1\'ea\'ee\'f0\'ee\'f1\'f2\'fc_\'e2\'fb\'ef\'ee\'eb\'ed\'e5\'ed\'e8\'ff \{\'c2\'fb\'f1\'ee\'ea\'e0\'ff, \'d1\'f0\'e5\'e4\'ed\'ff\'ff, \'cd\'e8\'e7\'ea\'e0\'ff\}
+\par \'d1\'ea\'ee\'f0\'ee\'f1\'f2\'fc_\'f0\'e0\'e7\'f0\'e0\'e1\'ee\'f2\'ea\'e8 \{\'c2\'fb\'f1\'ee\'ea\'e0\'ff, \'d1\'f0\'e5\'e4\'ed\'ff\'ff, \'cd\'e8\'e7\'ea\'e0\'ff\}
+\par \'d2\'e8\'ef \{\'ca\'ee\'ec\'ef\'e8\'eb\'e8\'f0\'f3\'e5\'ec\'fb\'e9, \'c8\'ed\'f2\'e5\'f0\'ef\'f0\'e5\'f2\'e8\'f0\'f3\'e5\'ec\'fb\'e9\}
+\par \'d1\'f0\'e5\'e4\'e0_\'e2\'fb\'ef\'ee\'eb\'ed\'e5\'ed\'e8\'ff \{\'ca\'f0\'ee\'f1\'f1\'ef\'eb\'e0\'f2\'f4\'ee\'f0\'ec\'e5\'ed\'ed\'fb\'e9, \'cd\'e5_\'ea\'f0\'ee\'f1\'f1\'ef\'eb\'e0\'f2\'f4\'ee\'f0\'ec\'e5\'ed\'ed\'fb\'e9\}
+\par \f0\'d1\'eb\'ee\'e6\'ed\'ee\'f1\'f2\'fc \f1\{\'c2\'fb\'f1\'ee\'ea\'e0\'ff, \'d1\'f0\'e5\'e4\'ed\'ff\'ff, \'cd\'e8\'e7\'ea\'e0\'ff\}
+\par \'c2\'ee\'f1\'f2\'f0\'e5\'e1\'ee\'e2\'e0\'ed\'ed\'ee\'f1\'f2\'fc \{\'c2\'fb\'f1\'ee\'ea\'e0\'ff, \'d1\'f0\'e5\'e4\'ed\'ff\'ff, \'cd\'e8\'e7\'ea\'e0\'ff\}
+\par \'d3\'f0\'ee\'e2\'e5\'ed\'fc \{\'c2\'fb\'f1\'ee\'ea\'e8\'e9, \'cd\'e8\'e7\'ea\'e8\'e9\}\f0 
+\par \'c2\'e5\'e1_\'f0\'e0\'e7\'f0\'e0\'e1\'ee\'f2\'ea\'e0 \lang1033\f2\{\lang1049\f3\'c4\'e0, \'cd\'e5\'f2\lang1033\f2\}\lang1049\f0 
+\par 
+\par \'cf\'c5\'d0\'c5\'cc\'c5\'cd\'cd\'db\'c5:
+\par \lang1033\f1 NAME\lang1049  \'cf1\f0 
+\par \lang1033\f1 IF\lang1049  \'d1\'ea\'ee\'f0\'ee\'f1\'f2\'fc_\'e2\'fb\'ef\'ee\'eb\'ed\'e5\'ed\'e8\'ff \'c2\'fb\'f1\'ee\'ea\'e0\'ff
+\par \lang1033 THEN \'df\'e7\'fb\'ea C++  [1],\lang1049 
+\par \'df\'e7\'fb\'ea Java [0],
+\par \'df\'e7\'fb\'ea Python [-1],
+\par \'df\'e7\'fb\'ea Pascal [1],
+\par \'df\'e7\'fb\'ea C# [0],
+\par \'df\'e7\'fb\'ea JS [1],
+\par \'df\'e7\'fb\'ea Ruby [-1],
+\par \'df\'e7\'fb\'ea PHP [-1]\lang1033 
+\par ELSE\lang1049 
+\par END\lang1033 
+\par 
+\par NAME \'cf2
+\par IF \'d1\'ea\'ee\'f0\'ee\'f1\'f2\'fc_\'e2\'fb\'ef\'ee\'eb\'ed\'e5\'ed\'e8\'ff \'d1\'f0\'e5\'e4\'ed\'ff\'ff
+\par THEN \'df\'e7\'fb\'ea C++  [0],\lang1049 
+\par \lang1033\'df\'e7\'fb\'ea Java [1],\lang1049 
+\par \'df\'e7\'fb\'ea Python [0],
+\par \'df\'e7\'fb\'ea Pascal [0],
+\par \'df\'e7\'fb\'ea C# [1],
+\par \'df\'e7\'fb\'ea JS [0],
+\par \'df\'e7\'fb\'ea Ruby [0],
+\par \'df\'e7\'fb\'ea PHP [0]
+\par ELSE 
+\par END\lang1033 
+\par 
+\par NAME \'cf3
+\par IF \'d1\'ea\'ee\'f0\'ee\'f1\'f2\'fc_\'e2\'fb\'ef\'ee\'eb\'ed\'e5\'ed\'e8\'ff \'cd\'e8\'e7\'ea\'e0\'ff
+\par THEN \'df\'e7\'fb\'ea C++  [-1],
+\par \'df\'e7\'fb\'ea Java [0],\lang1049 
+\par \lang1033\'df\'e7\'fb\'ea Python [1],\lang1049 
+\par \'df\'e7\'fb\'ea Pascal [0],
+\par \'df\'e7\'fb\'ea C# [0],
+\par \'df\'e7\'fb\'ea JS [-1],
+\par \'df\'e7\'fb\'ea Ruby [1],
+\par \'df\'e7\'fb\'ea PHP [1]
+\par ELSE
+\par END
+\par \lang1033 
+\par NAME \'cf4
+\par IF \'d1\'eb\'ee\'e6\'ed\'ee\'f1\'f2\'fc \'cd\'e8\'e7\'ea\'e0\'ff
+\par THEN \'df\'e7\'fb\'ea C++  [-1],
+\par \'df\'e7\'fb\'ea Java [0],
+\par \'df\'e7\'fb\'ea Python [1],\lang1049 
+\par \lang1033\'df\'e7\'fb\'ea Pascal [1],\lang1049 
+\par \'df\'e7\'fb\'ea C# [0],
+\par \'df\'e7\'fb\'ea JS [0],
+\par \'df\'e7\'fb\'ea Ruby [0],
+\par \'df\'e7\'fb\'ea PHP [1]
+\par ELSE
+\par END
+\par 
+\par 
+\par \lang1033 NAME \'cf5
+\par IF \'d1\'eb\'ee\'e6\'ed\'ee\'f1\'f2\'fc \'d1\'f0\'e5\'e4\'ed\'ff\'ff
+\par THEN \'df\'e7\'fb\'ea C++  [0],
+\par \'df\'e7\'fb\'ea Java [1],
+\par \'df\'e7\'fb\'ea Python [0],
+\par \'df\'e7\'fb\'ea Pascal [0],
+\par \'df\'e7\'fb\'ea C# [1],\lang1049 
+\par \lang1033\'df\'e7\'fb\'ea JS [1],\lang1049 
+\par \'df\'e7\'fb\'ea Ruby [1],
+\par \'df\'e7\'fb\'ea PHP [0]
+\par ELSE 
+\par END
+\par 
+\par NAME \'cf6
+\par IF \'d1\'eb\'ee\'e6\'ed\'ee\'f1\'f2\'fc \'c2\'fb\'f1\'ee\'ea\'e0\'ff
+\par \lang1033 THEN \'df\'e7\'fb\'ea C++  [1],
+\par \'df\'e7\'fb\'ea Java [0],
+\par \'df\'e7\'fb\'ea Python [-1],
+\par \'df\'e7\'fb\'ea Pascal [-1],
+\par \'df\'e7\'fb\'ea C# [0],
+\par \'df\'e7\'fb\'ea JS [0],\lang1049 
+\par \lang1033\'df\'e7\'fb\'ea Ruby [0],\lang1049 
+\par \'df\'e7\'fb\'ea PHP [-1]
+\par ELSE 
+\par \lang1033 END\lang1049 
+\par 
+\par NAME \'cf7
+\par IF \'d3\'f0\'ee\'e2\'e5\'ed\'fc \'cd\'e8\'e7\'ea\'e8\'e9
+\par THEN \'df\'e7\'fb\'ea C++  [1],
+\par \'df\'e7\'fb\'ea Java [-1],
+\par \lang1033\'df\'e7\'fb\'ea Python [-1],
+\par \'df\'e7\'fb\'ea Pascal [1],
+\par \'df\'e7\'fb\'ea C# [0,5],
+\par \'df\'e7\'fb\'ea JS [0,5],
+\par \'df\'e7\'fb\'ea Ruby [-1],
+\par \'df\'e7\'fb\'ea PHP [-1]\lang1049 
+\par \lang1033 ELSE 
+\par END\lang1049 
+\par 
+\par NAME \'cf8
+\par IF \'d3\'f0\'ee\'e2\'e5\'ed\'fc \'c2\'fb\'f1\'ee\'ea\'e8\'e9
+\par THEN \'df\'e7\'fb\'ea C++  [-1],
+\par \'df\'e7\'fb\'ea Java [0,5],
+\par \'df\'e7\'fb\'ea Python [1],
+\par \lang1033\'df\'e7\'fb\'ea Pascal [-1],
+\par \'df\'e7\'fb\'ea C# [0,5],
+\par \'df\'e7\'fb\'ea JS [0,5],
+\par \'df\'e7\'fb\'ea Ruby [1],
+\par \'df\'e7\'fb\'ea PHP [1]
+\par ELSE \lang1049 
+\par END\lang1033 
+\par \lang1049 
+\par NAME \'cf9
+\par IF \'c2\'ee\'f1\'f2\'f0\'e5\'e1\'ee\'e2\'e0\'ed\'ed\'ee\'f1\'f2\'fc \'cd\'e8\'e7\'ea\'e0\'ff
+\par THEN \'df\'e7\'fb\'ea C++  [-1],
+\par \'df\'e7\'fb\'ea Java [-1],
+\par \'df\'e7\'fb\'ea Python [-1],
+\par \'df\'e7\'fb\'ea Pascal [1],
+\par \lang1033\'df\'e7\'fb\'ea C# [0],
+\par \'df\'e7\'fb\'ea JS [-1],
+\par \'df\'e7\'fb\'ea Ruby [0,5],
+\par \'df\'e7\'fb\'ea PHP [-1]
+\par ELSE \lang1049 
+\par END
+\par \lang1033 
+\par \lang1049 NAME \'cf10
+\par IF \'c2\'ee\'f1\'f2\'f0\'e5\'e1\'ee\'e2\'e0\'ed\'ed\'ee\'f1\'f2\'fc \'d1\'f0\'e5\'e4\'ed\'ff\'ff
+\par THEN \'df\'e7\'fb\'ea C++  [-0],
+\par \'df\'e7\'fb\'ea Java [0],
+\par \'df\'e7\'fb\'ea Python [0],
+\par \'df\'e7\'fb\'ea Pascal [0],
+\par \'df\'e7\'fb\'ea C# [0,5],
+\par \lang1033\'df\'e7\'fb\'ea JS [0],
+\par \'df\'e7\'fb\'ea Ruby [0,5],
+\par \'df\'e7\'fb\'ea PHP [0]
+\par ELSE \lang1049 
+\par END
+\par 
+\par \lang1033 NAME \'cf11
+\par \lang1049 IF \'c2\'ee\'f1\'f2\'f0\'e5\'e1\'ee\'e2\'e0\'ed\'ed\'ee\'f1\'f2\'fc \'c2\'fb\'f1\'ee\'ea\'e0\'ff
+\par THEN \'df\'e7\'fb\'ea C++  [1],
+\par \'df\'e7\'fb\'ea Java [1],
+\par \'df\'e7\'fb\'ea Python [1],
+\par \'df\'e7\'fb\'ea Pascal [-1],
+\par \'df\'e7\'fb\'ea C# [0,5],
+\par \'df\'e7\'fb\'ea JS [1],
+\par \lang1033\'df\'e7\'fb\'ea Ruby [0],
+\par \'df\'e7\'fb\'ea PHP [1]
+\par ELSE\lang1049 
+\par END
+\par 
+\par NAME \'cf12
+\par \lang1033 IF \'d1\'ea\'ee\'f0\'ee\'f1\'f2\'fc_\'f0\'e0\'e7\'f0\'e0\'e1\'ee\'f2\'ea\'e8 \'cd\'e8\'e7\'ea\'e0\'ff
+\par \lang1049 THEN \'df\'e7\'fb\'ea C++  [1],
+\par \'df\'e7\'fb\'ea Java [0],
+\par \'df\'e7\'fb\'ea Python [-1],
+\par \'df\'e7\'fb\'ea Pascal [1],
+\par \'df\'e7\'fb\'ea C# [0],
+\par \'df\'e7\'fb\'ea JS [1],
+\par \'df\'e7\'fb\'ea Ruby [0,5],
+\par \lang1033\'df\'e7\'fb\'ea PHP [0,5]
+\par ELSE \lang1049 
+\par END
+\par 
+\par NAME \'cf13
+\par IF \'d1\'ea\'ee\'f0\'ee\'f1\'f2\'fc_\'f0\'e0\'e7\'f0\'e0\'e1\'ee\'f2\'ea\'e8 \'d1\'f0\'e5\'e4\'ed\'ff\'ff
+\par \lang1033 THEN \'df\'e7\'fb\'ea C++  [0],
+\par \lang1049\'df\'e7\'fb\'ea Java [1],
+\par \'df\'e7\'fb\'ea Python [0],
+\par \'df\'e7\'fb\'ea Pascal [0],
+\par \'df\'e7\'fb\'ea C# [1],
+\par \'df\'e7\'fb\'ea JS [0],
+\par \'df\'e7\'fb\'ea Ruby [0,5],
+\par \'df\'e7\'fb\'ea PHP [0,5]
+\par \lang1033 ELSE\lang1049 
+\par END
+\par 
+\par NAME \'cf14
+\par IF \'d1\'ea\'ee\'f0\'ee\'f1\'f2\'fc_\'f0\'e0\'e7\'f0\'e0\'e1\'ee\'f2\'ea\'e8 \'c2\'fb\'f1\'ee\'ea\'e0\'ff
+\par THEN \'df\'e7\'fb\'ea C++  [-1],
+\par \lang1033\'df\'e7\'fb\'ea Java [0],
+\par \lang1049\'df\'e7\'fb\'ea Python [1],
+\par \'df\'e7\'fb\'ea Pascal [-1],
+\par \'df\'e7\'fb\'ea C# [0],
+\par \'df\'e7\'fb\'ea JS [0],
+\par \'df\'e7\'fb\'ea Ruby [0],
+\par \'df\'e7\'fb\'ea PHP [0]
+\par ELSE
+\par END
+\par 
+\par NAME \'cf15
+\par IF \'d2\'e8\'ef \'ca\'ee\'ec\'ef\'e8\'eb\'e8\'f0\'f3\'e5\'ec\'fb\'e9
+\par THEN \'df\'e7\'fb\'ea C++  [1],
+\par \'df\'e7\'fb\'ea Java [0,5],
+\par \lang1033\'df\'e7\'fb\'ea Python [-1],
+\par \lang1049\'df\'e7\'fb\'ea Pascal [1],
+\par \'df\'e7\'fb\'ea C# [1],
+\par \'df\'e7\'fb\'ea JS [-1],
+\par \'df\'e7\'fb\'ea Ruby [-1],
+\par \'df\'e7\'fb\'ea PHP [-1]
+\par ELSE
+\par END
+\par \lang1033 
+\par NAME \'cf16
+\par IF \'d2\'e8\'ef \'c8\'ed\'f2\'e5\'f0\'ef\'f0\'e5\'f2\'e8\'f0\'f3\'e5\'ec\'fb\'e9
+\par THEN \'df\'e7\'fb\'ea C++  [-1],
+\par \'df\'e7\'fb\'ea Java [0,5],
+\par \lang1049\'df\'e7\'fb\'ea Python [1],
+\par \'df\'e7\'fb\'ea Pascal [-1],
+\par \'df\'e7\'fb\'ea C# [-1],
+\par \'df\'e7\'fb\'ea JS [1],
+\par \'df\'e7\'fb\'ea Ruby [1],
+\par \'df\'e7\'fb\'ea PHP [1]
+\par ELSE
+\par END
+\par \lang1033 
+\par NAME \'cf17
+\par IF \'d1\'f0\'e5\'e4\'e0_\'e2\'fb\'ef\'ee\'eb\'ed\'e5\'ed\'e8\'ff \'ca\'f0\'ee\'f1\'f1\'ef\'eb\'e0\'f2\'f4\'ee\'f0\'ec\'e5\'ed\'ed\'fb\'e9
+\par THEN \'df\'e7\'fb\'ea C++  [1],
+\par \'df\'e7\'fb\'ea Java [1],
+\par \lang1049\'df\'e7\'fb\'ea Python [1],
+\par \'df\'e7\'fb\'ea Pascal [-1],
+\par \'df\'e7\'fb\'ea C# [-1],
+\par \'df\'e7\'fb\'ea JS [1],
+\par \'df\'e7\'fb\'ea Ruby [0,8],
+\par \'df\'e7\'fb\'ea PHP [1]
+\par ELSE
+\par END
+\par \lang1033 
+\par NAME \'cf18
+\par IF \'d1\'f0\'e5\'e4\'e0_\'e2\'fb\'ef\'ee\'eb\'ed\'e5\'ed\'e8\'ff \'cd\'e5_\'ea\'f0\'ee\'f1\'f1\'ef\'eb\'e0\'f2\'f4\'ee\'f0\'ec\'e5\'ed\'ed\'fb\'e9
+\par THEN \'df\'e7\'fb\'ea C++  [-1],
+\par \'df\'e7\'fb\'ea Java [-1],
+\par \lang1049\'df\'e7\'fb\'ea Python [-1],
+\par \'df\'e7\'fb\'ea Pascal [1],
+\par \'df\'e7\'fb\'ea C# [1],
+\par \'df\'e7\'fb\'ea JS [-1],
+\par \'df\'e7\'fb\'ea Ruby [-0,8],
+\par \'df\'e7\'fb\'ea PHP [-1]
+\par ELSE
+\par END
+\par \lang1033 
+\par NAME \'cf19
+\par IF \'c2\'ee\'f1\'f2\'f0\'e5\'e1\'ee\'e2\'e0\'ed\'ed\'ee\'f1\'f2\'fc \'c2\'fb\'f1\'ee\'ea\'e0\'ff AND \'d1\'eb\'ee\'e6\'ed\'ee\'f1\'f2\'fc \'cd\'e8\'e7\'ea\'e0\'ff
+\par THEN \'df\'e7\'fb\'ea C++  [-1],
+\par \'df\'e7\'fb\'ea Java [-0,4],
+\par \lang1049\'df\'e7\'fb\'ea Python [1],
+\par \'df\'e7\'fb\'ea Pascal [-0,1],
+\par \'df\'e7\'fb\'ea C# [-0,3],
+\par \'df\'e7\'fb\'ea JS [-0,2],
+\par \'df\'e7\'fb\'ea Ruby [-0,2],
+\par \'df\'e7\'fb\'ea PHP [0,9]
+\par ELSE
+\par END
+\par \lang1033 
+\par NAME \'cf20
+\par IF \'c2\'ee\'f1\'f2\'f0\'e5\'e1\'ee\'e2\'e0\'ed\'ed\'ee\'f1\'f2\'fc \'c2\'fb\'f1\'ee\'ea\'e0\'ff AND \'d1\'ea\'ee\'f0\'ee\'f1\'f2\'fc_\'f0\'e0\'e7\'f0\'e0\'e1\'ee\'f2\'ea\'e8 \'c2\'fb\'f1\'ee\'ea\'e0\'ff
+\par THEN \'df\'e7\'fb\'ea C++  [-0,5],
+\par \'df\'e7\'fb\'ea Java [0,4],
+\par \lang1049\'df\'e7\'fb\'ea Python [1],
+\par \'df\'e7\'fb\'ea Pascal [-1],
+\par \'df\'e7\'fb\'ea C# [0,5],
+\par \'df\'e7\'fb\'ea JS [0,3],
+\par \'df\'e7\'fb\'ea Ruby [0,5],
+\par \'df\'e7\'fb\'ea PHP [0,8]
+\par ELSE
+\par \lang1033 END
+\par 
+\par NAME \'cf21
+\par IF \'c2\'e5\'e1_\'f0\'e0\'e7\'f0\'e0\'e1\'ee\'f2\'ea\'e0 \'c4\'e0
+\par THEN \'df\'e7\'fb\'ea C++  [-1],
+\par \lang1049\'df\'e7\'fb\'ea Java [0,5],
+\par \'df\'e7\'fb\'ea Python [0,5],
+\par \'df\'e7\'fb\'ea Pascal [-1],
+\par \'df\'e7\'fb\'ea C# [-1],
+\par \'df\'e7\'fb\'ea JS [1],
+\par \'df\'e7\'fb\'ea Ruby [1],
+\par \'df\'e7\'fb\'ea PHP [1]
+\par ELSE 
+\par END
+\par \lang1033 
+\par NAME \'cf21
+\par IF \'c2\'e5\'e1_\'f0\'e0\'e7\'f0\'e0\'e1\'ee\'f2\'ea\'e0 \'cd\'e5\'f2
+\par THEN \'df\'e7\'fb\'ea C++  [1],
+\par \'df\'e7\'fb\'ea Java [0,5],
+\par \lang1049\f0\'df\'e7\'fb\'ea Python [0,5],
+\par \f1\'df\'e7\'fb\'ea Pascal [1],
+\par \'df\'e7\'fb\'ea C# [1],
+\par \'df\'e7\'fb\'ea JS [-1],
+\par \'df\'e7\'fb\'ea Ruby [0,5],
+\par \'df\'e7\'fb\'ea PHP [-1]
+\par ELSE
+\par END\f3 
+\par }
+ 
