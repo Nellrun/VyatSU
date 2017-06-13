@@ -1,0 +1,12 @@
+<program> ::= <statement>  | <statement> <statement>.
+<statement> ::= <predicat> <or> <statement> | <predicat> ".".
+<predicat> ::= <predicat-id> <paren-expr> | <not> <predicat-id> <paren-expr>.
+<paren-expr> ::= "(" <expr> ")".
+<expr> ::= <term> | <term> "," <expr>.
+<term> ::= <var> | <const> | <func> <paren-expr>.
+<not> ::= "not" | "!" | "-".
+<or> ::= "v" | "or".
+<var> ::= "a" | "b" | ... | "z" | "aA" | "aa" | ... | "zzzzzzzzzzzzzz".
+<const> ::= "A" | "B" | ... | "Z" | "AA" | "Aa" | ... | "Zzzzzzzzzzzzzz".
+<func> ::= "A" | "a" | "B" | "b" | ... | "z" | ... | "aA" | "aa" | "AA" | "Aa" | ... | "Zzzzzzz".
+<predicat-id> ::= "A" | "a" | "B" | "b" | ... | "z" | ... | "aA" | "aa" | "AA" | "Aa" | ... | "Zzzzzzz".

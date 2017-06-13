@@ -1,0 +1,14 @@
+# Нравится(Джилл, вино)
+Love(Jill, Wine).
+
+# Нравится(Джон, еда)
+Love(Jhon, food).
+
+# Нравится(Джон, вино)
+Love(Jhon, food).
+
+# Мужчина(Джон)
+Male(Jhon)
+
+# Нравится(y, Вино) и Мужчина(y) -> Провожатый(x, y)
+not Love(y, Wine) or not Male(y) or Escort(x, y).

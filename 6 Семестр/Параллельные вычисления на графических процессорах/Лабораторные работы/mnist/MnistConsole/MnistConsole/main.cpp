@@ -2,6 +2,7 @@
 #include "Matrix.h"
 #include "LogisticRegression.h"
 #include <ctime>
+#include <omp.h>
 
 #define TRAIN 10000
 #define TEST 1000
@@ -37,6 +38,7 @@ int main() {
 	Matrix* X = zeros(TRAIN, 28 * 28);
 	Matrix* Y = zeros(TRAIN, 10);
 	for (int i = 0; i < TRAIN; i++) {
+		_aligned_free(X->value[i]);
 		X->value[i] = mr->getMatrix();
 		Y->value[i][mr->label] = 1;
 		mr->next();
@@ -49,31 +51,56 @@ int main() {
 	LogisticRegression* lgLinA1 = new LogisticRegression(28 * 28, 10, lin, a1);
 	LogisticRegression* lgThA1 = new LogisticRegression(28 * 28, 10, th, a1);
 	
-	t = clock();
-	lgSigm->fit(X, Y, EPOCHES);
-	std::cout << "LogReg with Sigmoid." << " fit time = " << (float) (clock() - t) / CLOCKS_PER_SEC << " sec" << std::endl;
 
-	t = clock();
-	lgLin->fit(X, Y, EPOCHES);
-	std::cout << "LogReg with Linear." << " fit time = " << (float)(clock() - t) / CLOCKS_PER_SEC << " sec" << std::endl;
+#pragma omp parallel sections private(t)
+	{
+#pragma omp section
+			{
+				t = clock();
+				lgSigm->sse_fit(X, Y, EPOCHES);
+				float time = (float)(clock() - t);
+				std::cout << "LogReg with Sigmoid." << " fit time = " << time / CLOCKS_PER_SEC << " sec" << std::endl;
+			}
+#pragma omp section 
+			{
+				t = clock();
+				lgLin->sse_fit(X, Y, EPOCHES);
+				float time = (float)(clock() - t);
+				std::cout << "LogReg with Linear." << " fit time = " << time / CLOCKS_PER_SEC << " sec" << std::endl;
+			}
 
-	t = clock();
-	lgTh->fit(X, Y, EPOCHES);
-	std::cout << "LogReg with Th." << " fit time = " << (float)(clock() - t) / CLOCKS_PER_SEC << " sec" << std::endl;
+#pragma omp section 
+			{
+				t = clock();
+				lgTh->sse_fit(X, Y, EPOCHES);
+				float time = (float)(clock() - t);
+				std::cout << "LogReg with Th." << " fit time = " << time / CLOCKS_PER_SEC << " sec" << std::endl;
+			}
+#pragma omp section 
+			{
+				t = clock();
+				lgSigmA1->sse_fit(X, Y, EPOCHES);
+				float time = (float)(clock() - t);
+				std::cout << "LogReg with Sigmoid and learn rate a1." << " fit time = " << time / CLOCKS_PER_SEC << " sec" << std::endl;
+			}
 
-	t = clock();
-	lgSigmA1->fit(X, Y, EPOCHES);
-	std::cout << "LogReg with Sigmoid and learn rate a1." << " fit time = " << (float)(clock() - t) / CLOCKS_PER_SEC << " sec" << std::endl;
+#pragma omp section 
+			{
+				t = clock();
+				lgLinA1->sse_fit(X, Y, EPOCHES);
+				float time = (float)(clock() - t);
+				std::cout << "LogReg with Linear and learn rate a1." << " fit time = " << time / CLOCKS_PER_SEC << " sec" << std::endl;
+			}
 
-	t = clock();
-	lgLinA1->fit(X, Y, EPOCHES);
-	std::cout << "LogReg with Linear and learn rate a1." << " fit time = " << (float)(clock() - t) / CLOCKS_PER_SEC << " sec" << std::endl;
-
-	t = clock();
-	lgThA1->fit(X, Y, EPOCHES);
-	std::cout << "LogReg with Th and learn rate a1." << " fit time = " << (float)(clock() - t) / CLOCKS_PER_SEC << " sec" << std::endl;
-	
-
+#pragma omp section 
+			{
+				t = clock();
+				lgThA1->sse_fit(X, Y, EPOCHES);
+				float time = (float)(clock() - t);
+				std::cout << "LogReg with Th and learn rate a1." << " fit time = " << time / CLOCKS_PER_SEC << " sec" << std::endl;
+			}
+		}
+	//}
 	//Matrix* pred = getMax(lg->predict(X));
 	//Matrix* ans = getMax(Y);
 
@@ -112,23 +139,23 @@ int main() {
 }
 
 //int main() {
-//	Matrix* a = ones(28*28, 10);
-//	Matrix* b = ones(28*28, 10);
+//	Matrix* a = ones(128, 128);
+//	Matrix* b = ones(128, 128);
 //
 //	time_t t = std::clock();
-//	for (int i = 0; i < 5000; i++) {
-//		a = sub(a, b, 1);
+//	for (int i = 0; i < 1000; i++) {
+//		a = matmul(a, b, 1);
 //	}
 //
 //	Matrix* a_0 = a;
-//	std::cout << "SUM: " << (double)(std::clock() - t) / 1000 << std::endl;
+//	std::cout << "MUL: " << (double)(std::clock() - t) / 1000 << std::endl;
 //
-//	a = ones(28*28, 10);
+//	a = ones(128, 128);
 //	t = std::clock();
-//	for (int i = 0; i < 5000; i++) {
-//		a = sse_sub(a, b, 1);
+//	for (int i = 0; i < 1000; i++) {
+//		a = sse_matmul(a, b, 1);
 //	}
-//	std::cout << "SSE: " << (double)(std::clock() - t) / 1000 << std::endl;
+//	std::cout << "SSE MUL: " << (double)(std::clock() - t) / 1000 << std::endl;
 //
 //	std::cout << cmp(a, a_0) << std::endl;
 //

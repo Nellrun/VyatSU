@@ -1,6 +1,8 @@
 #pragma once
-#include <cstdlib>
 #include <iostream>
+#include <stdlib.h>
+#include <intrin.h>
+#include <malloc.h>
 #include <omp.h>
 
 namespace matrix {
@@ -26,6 +28,7 @@ namespace matrix {
 
 	Matrix* sse_sum(Matrix* a, Matrix* b, int clear);
 	Matrix* sse_sub(Matrix* a, Matrix* b, int clear);
+	Matrix* sse_matmul(Matrix* a, Matrix* b, int clear);
 
 	Matrix* sum(Matrix* a, Matrix* b, int clear);
 	Matrix* sub(Matrix* a, Matrix* b, int clear);
@@ -49,13 +52,14 @@ namespace matrix {
 		else if (clr & 2) m = b;
 		else m = zeros(a->lines, a->cols, 0);
 
+//#pragma omp parallel for
 		for (int i = 0; i < a->lines; i++) {
-			int len = a->cols / 4;
+			int len = round(a->cols / 4);
 			__m128* ptr_a = (__m128*) a->value[i];
 			__m128* ptr_b = (__m128*) b->value[i];
 			float* m_ptr = m->value[i];
 			for (int i = 0; i < len; i++, ptr_a++, ptr_b++, m_ptr += 4) {
-				_mm_store_ss(m_ptr, _mm_add_ss(*ptr_a, *ptr_b));
+				_mm_store_ps(m_ptr, _mm_add_ps(*ptr_a, *ptr_b));
 			}
 		}
 
@@ -72,7 +76,7 @@ namespace matrix {
 		if (clr & 1) m = a;
 		else if (clr & 2) m = b;
 		else m = zeros(a->lines, a->cols, 0);
-
+//#pragma omp parallel for
 		for (int i = 0; i < a->lines; i++) {
 			int len = a->cols / 4;
 			//if (a->cols % 4 > 0) len++;
@@ -101,19 +105,71 @@ namespace matrix {
 	Matrix* sse_mul(Matrix* a, t b, int clr=3) {
 		Matrix* m;
 
-		float vec[4] = { b, b, b, b };
-		__m128* ptr_b = (__m128*) &vec;
+		float* vec = (float*) _aligned_malloc(4 * sizeof(float), 16);
+		vec[0] = b;
+		vec[1] = b;
+		vec[2] = b;
+		vec[3] = b;
+
+		__m128* ptr_b = (__m128*) vec;
 
 		if (clr & 1) m = a;
 		else m = zeros(a->lines, a->cols, 0);
-
+//#pragma omp parallel for
 		for (int i = 0; i < a->lines; i++) {
 			int len = a->cols / 4;
 			__m128* ptr_a = (__m128*) a->value[i];
 			float* m_ptr = m->value[i];
 			for (int j = 0; j < len; j++, ptr_a++, m_ptr += 4) {
-				_mm_store_ss(m_ptr, _mm_mul_ss(*ptr_a, *ptr_b));
+				_mm_store_ps(m_ptr, _mm_mul_ps(*ptr_a, *ptr_b));
 			}
+
+			for (int j = a->cols - (a->cols % 4); j < a->cols; j++) {
+				m->value[i][j] = a->value[i][j] * b;
+			}
+		}
+
+		_aligned_free(vec);
+
+		return m;
+	}
+
+
+	Matrix* sse_matmul(Matrix* a, Matrix* b, int clr=3) {
+		if (a->cols != b->lines) {
+			return NULL;
+		}
+
+		Matrix* m = zeros(a->lines, b->cols, 0);
+
+		for (int i = 0; i < a->lines; i++) {
+			for (int j = 0; j < a->cols; j++) {
+				float* vec = (float*)_aligned_malloc(4 * sizeof(float), 16);
+				float value = a->value[i][j];
+				vec[0] = value;
+				vec[1] = value;
+				vec[2] = value;
+				vec[3] = value;
+
+				__m128* a_ptr = (__m128*) vec;
+				__m128* b_ptr = (__m128*) b->value[j];
+				__m128* m_ptrv = (__m128*) m->value[i];
+				float* m_ptr = m->value[i];
+
+				int len = b->cols / 4;
+				for (int k = 0; k < len + 1; k++, b_ptr++, m_ptrv++, m_ptr += 4) {
+					_mm_store_ps(m_ptr, _mm_add_ps(*m_ptrv, _mm_mul_ps(*a_ptr, *b_ptr)));
+				}
+				_aligned_free(vec);
+			}
+		}
+
+		if (clr & 1) {
+			clear(a);
+		}
+
+		if (clr & 2) {
+			clear(b);
 		}
 
 		return m;
@@ -137,7 +193,10 @@ namespace matrix {
 
 		m->value = new float*[lines];
 		for (int i = 0; i < lines; i++) {
-			m->value[i] = new float[cols];
+			//m->value[i] = new float[cols]
+			m->value[i] = (float*) _aligned_malloc(cols * sizeof(float), 16);
+			//aligned_allk
+			//align_alloc((void**)&m->value[i], 16, cols * sizeof(float));
 			for (int j = 0; j < cols; j++) {
 				m->value[i][j] = num;
 			}
@@ -159,7 +218,7 @@ namespace matrix {
 
 		m->value = new float*[lines];
 		for (int i = 0; i < lines; i++) {
-			m->value[i] = new float[cols];
+			m->value[i] = (float*)_aligned_malloc(cols * sizeof(float), 16);
 			for (int j = 0; j < cols; j++) {
 				m->value[i][j] = ((float) rand() / RAND_MAX) * (abs(max) + abs(min)) + min;
 			}
@@ -172,7 +231,7 @@ namespace matrix {
 	Matrix* mul(Matrix* a, t b, int clr=3) {
 		Matrix* m = zeros(a->lines, a->cols);
 
-#pragma omp parallel for
+//#pragma omp parallel for
 		for (int i = 0; i < a->lines; i++) {
 //#pragma omp parallel for
 			for (int j = 0; j < a->cols; j++) {
@@ -198,7 +257,7 @@ namespace matrix {
 		else if (clr & 2) m = b;
 		else m = zeros(a->lines, a->cols);
 
-#pragma omp parallel for
+//#pragma omp parallel for
 		for (int i = 0; i < a->lines; i++) {
 //#pragma omp parallel for
 			for (int j = 0; j < a->cols; j++) {
@@ -224,7 +283,7 @@ namespace matrix {
 		else if (clr & 2) m = b;
 		else m = zeros(a->lines, a->cols);
 
-#pragma omp parallel for
+//#pragma omp parallel for
 		for (int i = 0; i < a->lines; i++) {
 //#pragma omp parallel for
 			for (int j = 0; j < a->cols; j++) {
@@ -259,7 +318,7 @@ namespace matrix {
 		else if (clr & 2) m = b;
 		else m = zeros(a->lines, a->cols);
 
-#pragma omp parallel for
+//#pragma omp parallel for
 		for (int i = 0; i < a->lines; i++) {
 //#pragma omp parallel for
 			for (int j = 0; j < a->cols; j++) {
@@ -289,9 +348,11 @@ namespace matrix {
 
 		Matrix* m = zeros(a->lines, b->cols);
 
+//#pragma omp parallel for
 		for (int k = 0; k < b->cols; k++) {
+//#pragma omp parallel for
 			for (int i = 0; i < a->lines; i++) {
-#pragma omp parallel for
+//#pragma omp parallel for
 				for (int j = 0; j < a->cols; j++) {
 					m->value[i][k] += a->value[i][j] * b->value[j][k];
 				}
@@ -379,7 +440,8 @@ namespace matrix {
 
 	void clear(Matrix* a) {
 		for (int i = 0; i < a->lines; i++) {
-			delete[] a->value[i];
+			//delete[] a->value[i];
+			_aligned_free(a->value[i]);
 		}
 		delete[] a->value;
 		delete a;

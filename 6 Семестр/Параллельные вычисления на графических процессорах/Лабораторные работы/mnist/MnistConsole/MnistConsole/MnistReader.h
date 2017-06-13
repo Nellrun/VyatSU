@@ -2,6 +2,7 @@
 #include <iostream>
 #include <fstream>
 
+
 using namespace std;
 
 template <typename t>
@@ -74,7 +75,8 @@ public:
 	}
 
 	float* getMatrix() {
-		float* arr = new float[28 * 28];
+		//float* arr = new float[28 * 28];
+		float* arr = (float*) _aligned_malloc(28 * 28 * sizeof(float), 16);
 
 		for (int i = 0; i < 28 * 28; i++)
 		{

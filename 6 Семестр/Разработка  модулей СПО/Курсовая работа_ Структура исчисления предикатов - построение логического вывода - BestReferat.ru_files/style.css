@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.frame_title {
+    font-size: 13px;
+}
+
+.head_title {
+    font-size: 36px;
+    color: #aa008c;
+    text-decoration: none;
+}
+
+.border_cell {
+    border-right: black 1px solid;
+    padding-right: 5px;
+    border-top: black 1px solid;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    margin: 5px;
+    border-left: black 1px solid;
+    padding-top: 5px;
+    border-bottom: black 1px solid;
+}
+.list_table
+{
+    border-collapse: separate;
+    background-color: #ffffdd;
+}
+
+div.top-papers>div.title {font-weight: bold; text-align: center;}
+table.top-papers > tbody > tr >td:nth-of-type(1) {width: 5%; text-align: center;}
+table.top-papers > tbody > tr >td:nth-of-type(2) {width: 85%;}
+table.top-papers > tbody > tr >td:nth-of-type(3) {width: 10%; text-align: center;}
+
+table.top-papers > tbody > tr > td
+{
+    border: black 1px solid;
+    padding: 0.4em;
+    margin: 0.4em;
+}
+
+table.top-papers
+{
+    border-collapse: separate;
+    background-color: #ffffdd;
+    width: 96%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+H1 {
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 22px;
+    padding-bottom: 5px;
+    margin: 5px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+H2 {
+    text-align: center;
+    font-size: 18px;
+}
+
+BODY {
+    font-family: Arial;
+}
+
+TD {
+    text-align: justify;
+    font-size: 13px;
+    word-wrap: break-word;
+    vertical-align: top;
+}
+
+LI, OL, UL {
+    margin-left: 25px;
+}
+
+p {
+    text-indent: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+a {
+    color: #6600cc;
+    text-decoration: none;
+    line-height: 150%;
+
+}
+
+a:visited {
+    color: #800080;
+}
+
+a:hover {
+    color: #0066FF;
+    text-decoration: underline;
+}
+
+.content {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.categories_list {
+    font-size: 11px;
+}
+
+img {
+    border: none;
+    max-width: 100%;
+}
+
+.timg {
+    margin: 0;
+}
+
+.symbol {
+    font-family: Symbol, serif;
+}
+
+.suggestionsBox {
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    width: 200px;
+    border: 1px solid #aaaaaa;
+    background-color: #FFFFFF;
+}
+
+.suggestionList {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.suggestListItem {
+    margin: 0px 0px 3px 0px;
+    cursor: pointer;
+    color: #6600cc;
+}
+
+.suggestListItem:hover {
+    color: #0066FF;
+}
+
+.yashare-auto-init {
+    text-align: center;
+    margin-top: 1em;
+    /*margin-bottom:1em;*/
+}
+
+form#comments_form {
+    display: block;
+    margin: 2%;
+    width: 96%;
+}
+
+form#comments_form > .wrapper {
+    display: table;
+    width: 100%;
+}
+
+form#comments_form > .wrapper > .label-input {
+    display: table-row;
+}
+
+form#comments_form > .wrapper > .label-input > .label, form#comments_form > .label-input > .input {
+    display: table-cell;
+    padding-bottom: 0.5em;
+}
+
+form#comments_form > .title {
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+form#comments_form textarea {
+    margin-bottom: 0.5em;
+    display: block;
+    width: 100%;
+    height: 5em;
+}
+
+form#comments_form input[name='sender_name'] {
+    width: 100%;
+}
+
+form#comments_form input[type='submit'] {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    padding: 0.2em;
+}
+
+form#comments_form > .wrapper > .label-input > .input > label {
+    margin-right: 1em;
+}
+
+form#comments_form > .wrapper > .label-input > .input > label > input {
+    margin-right: 0.5em;
+}

@@ -1,9 +1,11 @@
 ﻿  main.cpp
-c:\users\danill\skydrive\vyatsu\6 семестр\параллельные вычисления на графических процессорах\лабораторные работы\mnist\mnistconsole\mnistconsole\matrix.h(362): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+c:\users\danill\skydrive\vyatsu\6 семестр\параллельные вычисления на графических процессорах\лабораторные работы\mnist\mnistconsole\mnistconsole\matrix.h(57): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+c:\users\danill\skydrive\vyatsu\6 семестр\параллельные вычисления на графических процессорах\лабораторные работы\mnist\mnistconsole\mnistconsole\matrix.h(423): warning C4244: =: преобразование "int" в "float", возможна потеря данных
 c:\users\danill\skydrive\vyatsu\6 семестр\параллельные вычисления на графических процессорах\лабораторные работы\mnist\mnistconsole\mnistconsole\logisticregression.h(9): warning C4244: return: преобразование "double" в "float", возможна потеря данных
 c:\users\danill\skydrive\vyatsu\6 семестр\параллельные вычисления на графических процессорах\лабораторные работы\mnist\mnistconsole\mnistconsole\logisticregression.h(13): warning C4244: return: преобразование "int" в "float", возможна потеря данных
 c:\users\danill\skydrive\vyatsu\6 семестр\параллельные вычисления на графических процессорах\лабораторные работы\mnist\mnistconsole\mnistconsole\logisticregression.h(21): warning C4244: return: преобразование "double" в "float", возможна потеря данных
-c:\users\danill\skydrive\vyatsu\6 семестр\параллельные вычисления на графических процессорах\лабораторные работы\mnist\mnistconsole\mnistconsole\matrix.h(183): warning C4554: &: проверьте порядок применения операторов на наличие ошибки; для четкого задания порядка используйте скобки
+c:\users\danill\skydrive\vyatsu\6 семестр\параллельные вычисления на графических процессорах\лабораторные работы\mnist\mnistconsole\mnistconsole\main.cpp(36): warning C4101: t: неиспользованная локальная переменная
+c:\users\danill\skydrive\vyatsu\6 семестр\параллельные вычисления на графических процессорах\лабораторные работы\mnist\mnistconsole\mnistconsole\matrix.h(242): warning C4554: &: проверьте порядок применения операторов на наличие ошибки; для четкого задания порядка используйте скобки
   c:\users\danill\skydrive\vyatsu\6 семестр\параллельные вычисления на графических процессорах\лабораторные работы\mnist\mnistconsole\mnistconsole\logisticregression.h(58): note: см. ссылку на создание экземпляров функции шаблон при компиляции "matrix::Matrix *matrix::mul<float>(matrix::Matrix *,t,int)"
           with
           [

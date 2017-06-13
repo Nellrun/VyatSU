@@ -65,12 +65,16 @@ public:
 		//less(X, y);
 	}
 
+	Matrix* sse_predict(Matrix* X) {
+		return map(sse_sum(matmul(X, W, false), b, false), *this->activate);
+	}
+
 	void sse_fit(Matrix* X, Matrix* Y, int epoch = 10) {
 		for (int e = 0; e < epoch; e++) {
 			for (int i = 0; i < X->lines; i++) {
 				Matrix* x = getLine(X, i);
 				Matrix* y = getLine(Y, i);
-				Matrix* d = sse_sub(this->predict(x), y, 1);
+				Matrix* d = sse_sub(this->sse_predict(x), y, 1);
 				Matrix* t_x = transpose(x, 0);
 				this->W = sse_sub(this->W, sse_mul(matmul(t_x, d, 1), learnCoeff(e + 1)));
 				this->b = sse_sub(this->b, sse_mul(matmul(ones(1, x->lines), d), learnCoeff(e + 1)));
