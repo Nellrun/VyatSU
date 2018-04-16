@@ -1,0 +1,18 @@
+:Base setupgen.hlp
+:Title Setup Generator - 
+1 Introduction
+2 About Setup Generator=IDH_WHATS
+2 Copyright=IDH_COPYRIGHT
+2 License Agreement=IDH_LICENSE
+1 Project Settings
+2 Description=IDH_PROJECT
+2 General=IDH_GENERAL
+2 At the beginning=IDH_BEGIN
+2 Files=IDH_FILES
+2 INI/Registry=IDH_INIREGISTRY
+2 Shortcuts=IDH_SHORTCUTS
+2 At the end=IDH_END
+1 FAQ
+2 More Features=IDH_MOREFEATURES 
+2 Default Macros=IDH_MACRODEFAULT 
+2 Language support=IDH_LOCALIZE

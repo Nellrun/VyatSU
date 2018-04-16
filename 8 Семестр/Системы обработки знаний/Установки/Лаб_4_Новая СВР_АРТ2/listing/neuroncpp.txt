@@ -1,0 +1,27 @@
+// [snip]
+
+// инициализация весов случайными значениями
+void neuron::randomize_weights(double a, double b)
+{
+	if (!(a < b))
+        	throw Exception("Неверно указаны границы.");
+
+	for (vec::iterator i = weights.begin(); i != weights.end(); ++i)
+		*i = (b - a) * ((double)rand() / RAND_MAX + a);
+}
+
+// [snip]
+
+// нормализация весов
+void neuron::normalize_weights()
+{
+	normalize(weights);
+}
+
+// доступ к произвольному весу
+const double& neuron::operator[] (const unsigned& ind) const
+{
+	return weights[ind];
+}
+
+// [snip]

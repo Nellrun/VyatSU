@@ -1,0 +1,46 @@
+// [snip]
+
+// одина итерация обучения
+void grossberg_layer::teach_step(const kohonen_layer* kl,
+		const sample& smp,
+		const double& a,
+		const double& min_err)
+{
+	for (long i = smp.get_samples_count() - 1; i >= 0; --i)
+	{
+		unsigned winner = kl->get_cluster(smp.get_sample(i));
+
+		for (unsigned j = 0; j < neurons.size(); ++j)
+		{
+			(*(neurons[j]))[winner] -=
+				a * ((*(neurons[j]))[winner] -
+				smp.get_value(i)[j]);
+		}
+	}
+}
+
+// случайным образом инициализируем веса
+void grossberg_layer::randomize_weights()
+{
+	for (vector<neuron *>::const_iterator i = neurons.begin();
+		i != neurons.end(); ++i)
+	{
+		(*i)->randomize_weights();
+	}
+}
+
+// выход слоя
+vec grossberg_layer::get_output(unsigned int nn)
+{
+	vec out;
+
+	for (vector<neuron *>::const_iterator i = neurons.begin();
+		i != neurons.end(); ++i)
+	{
+		out.push_back((*(*i))[nn]);
+	}
+
+	return out;
+}
+
+// [snip]

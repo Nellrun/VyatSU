@@ -1,0 +1,90 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity single_port_rom is
+
+	port
+	(
+		addr	: in natural range 0 to 127;
+		clk		: in std_logic;
+		q		: out std_logic_vector(3 downto 0)
+	);
+	
+end entity;
+
+architecture rtl of single_port_rom is
+
+	-- Build a 2-D array type for the RoM
+	subtype word_t is std_logic_vector(3 downto 0);
+	type memory_t is array(255 downto 0) of word_t;
+		
+	function init_rom
+		return memory_t is
+		variable tmp : memory_t := (others => (others => '0'));
+		begin
+			for addr_pos in 0 to 127 loop
+				-- Initialize each address with the address itself
+				tmp(addr_pos) := std_logic_vector(to_unsigned(addr_pos, 4));
+			end loop;
+		return tmp;
+	end init_rom;
+	
+	-- Declare the ROM signal and specify a default value.	Quartus II
+	-- will create a memory initialization file (.mif) based on the 
+	-- default value.
+	signal rom : memory_t := (
+		0 => "1000", -- Prog 1
+		1 => "0100",
+		2 => "0010",
+		3 => "0001",
+		4 => "1000",
+		5 => "0100",
+		6 => "0010",
+		7 => "0001",
+		8 => "0001", -- Prog 2
+		9 => "0010",
+		10 => "0100",
+		11 => "1000",
+		12 => "0001",
+		13 => "0010",
+		14 => "0100",
+		15 => "1000",
+		16 => "0101", -- Prog 3
+		17 => "1010",
+		18 => "0101",
+		19 => "1010",
+		20 => "0101",
+		21 => "1010",
+		22 => "0101",
+		23 => "1010",
+		24 => "0101",
+		25 => "0000", -- Prog 4
+		26 => "1000",
+		27 => "1100",
+		28 => "1110",
+		29 => "1111",
+		30 => "1110",
+		31 => "1100",
+		32 => "1000",
+		33 => "0000", -- Prog 5
+		34 => "0001",
+		35 => "0011",
+		36 => "0111",
+		37 => "1111",
+		38 => "0111",
+		39 => "0011",
+		40 => "0001",
+		OTHERS => "0000"
+	);
+	
+begin
+	
+	process(clk)
+	begin
+		if(rising_edge(clk)) then
+			q <= rom(addr);
+		end if;
+	end process;
+		
+end rtl;

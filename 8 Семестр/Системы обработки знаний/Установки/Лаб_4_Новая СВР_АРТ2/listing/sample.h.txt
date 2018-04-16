@@ -1,0 +1,49 @@
+// [snip]
+
+/*
+ * Обучающая выборка + примеры для тестирования
+ */
+class sample
+{
+	// число входных параметров
+	unsigned inputs_number;
+
+	// число выходных параметров
+	unsigned outputs_number;
+
+	vector<vec> samples,	// входные параметры для обучения
+		values,		// выходные параметры для обучения
+		testing;	// входные параметры для тестирования
+
+	// удаляет все ";" из строки
+	string remove_semicolons(const string& str);
+public:
+	// конструктор
+	// file_name -- файл с выборкой в формате CSV
+	// inputs_nubmer -- число входных параметров
+	// outputs_number -- число выходных параметров
+	sample(const char *file_name,
+		unsigned inputs_number,
+		unsigned outputs_number);
+
+	// возвращает число примеров в обучающей выборке
+	unsigned get_samples_count() const { return samples.size(); }
+
+	// возвращает число примеров для тестирования
+	unsigned get_testing_count() const { return testing.size(); }
+
+	// возвращает пример в обучающей выборке
+	vec get_sample(unsigned index) const { return samples.at(index); }
+
+	// возвращает выходные параметры примера из обучающей выборки
+	vec get_value(unsigned index) const { return values.at(index); }
+
+	// возвращает пример для тестирования
+	vec get_testing(unsigned index) const { return testing.at(index); }
+
+	// возвращает число входных параметров
+	unsigned get_inputs_number() const { return inputs_number; }
+
+	// возвращает число выходных параметров
+	unsigned get_outputs_number() const { return outputs_number; }
+};

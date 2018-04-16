@@ -1,0 +1,189 @@
+// [snip]
+
+// конструктор
+// neurons_number_kohonen -- число нейронов в слое Кохонена
+// neurons_number_grossberg -- число нейронов в слое Гроссберга
+// inputs_nuber -- число входов сети
+cpn_net::cpn_net(unsigned nnk,
+		unsigned nng,
+		unsigned in)
+{
+	// инициализируем генератор случайных чисел
+	time_t tm;
+	time(&tm);
+	srand((unsigned)tm);
+
+	// создаем слои сети
+	kl = new kohonen_layer(nnk, in);
+	gl = new grossberg_layer(nng, nnk);
+
+	inputs_number = in;
+	smp = NULL;
+}
+
+cpn_net::~cpn_net()
+{
+	delete kl;
+	delete gl;
+
+	if (smp)
+		delete smp;
+}
+
+// загрузить обучающую выборку
+void cpn_net::load_sample(const sample& s)
+{
+	if (smp)
+		delete smp;
+
+	smp = new sample(s);
+}
+
+// возвращает матрицу весов синапсов всех нейронов слоя Кохонена
+vector<vec> cpn_net::get_kohonen_layer_struct() const
+{
+	return kl->get_layer_struct();
+}
+
+// возвращает матрицу весов синапсов всех нейронов слоя Гроссберга
+vector<vec> cpn_net::get_grossberg_layer_struct() const
+{
+	return gl->get_layer_struct();
+}
+
+// обучение сети
+void cpn_net::teach(const struct teach_parameters& param)
+{
+	kl->teach(*smp, param.min_error, param.max_iter_count, param.neighbourhood);
+	gl->teach(kl, *smp, param.rate, param.min_error, param.max_iter_count);
+}
+
+bool cpn_net::teach_step()
+{
+	if (cur_iter--)
+	{
+		kl->next_teach_iter(*smp, t++, s);
+		s -= params.neighbourhood / smp->get_samples_count() /
+			params.max_iter_count;
+
+		gl->teach_step(kl, *smp, a, params.min_error);
+		a -= params.rate / smp->get_samples_count() /
+			params.max_iter_count;
+
+		return false;
+	}
+
+	return true;
+}
+
+// [snip]
+
+// инициализация весов синапсов нейронов случайными числами
+void cpn_net::randomize(const struct teach_parameters& param)
+{
+	params = param;
+
+	gl->randomize_weights();
+	kl->randomize_weights();
+
+	cur_iter = smp->get_samples_count() * param.max_iter_count;
+	t = 1;
+	s = param.neighbourhood;
+	a = param.rate;
+}
+
+// получить выход сети
+vec cpn_net::approximate(const vec &x) const
+{
+	unsigned winner = kl->get_cluster(x);
+	return gl->get_output(winner);
+}
+
+vec cpn_net::approximate_few_winners(const vec &x) const
+{
+	vec y = kl->get_output(x);
+	normalize(y);
+	return gl->get_output_few_winners(y);
+}
+
+// среднеквадратичная ошибка
+double cpn_net::get_rms_error() const
+{
+	double rms = 0.0;
+
+	for (long i = smp->get_samples_count() - 1; i >= 0; --i)
+	{
+		double v = dist(approximate(smp->get_sample(i)),
+			smp->get_value(i));
+		rms += v * v;
+	}
+
+	return sqrt(rms / smp->get_samples_count() / smp->get_outputs_number());
+}
+
+// максимальная ошибка
+double cpn_net::get_max_error() const
+{
+	double max_err = -1e100;
+
+	for (long i = smp->get_samples_count() - 1; i >= 0; --i)
+	{
+		double v = dist(approximate(smp->get_sample(i)),
+			smp->get_value(i));
+
+		if (v > max_err)
+			max_err = v;
+	}
+
+	return max_err;
+}
+
+// минимальная ошибка
+double cpn_net::get_min_error() const
+{
+	double min_err = 1e100;
+
+	for (long i = smp->get_samples_count() - 1; i >= 0; --i)
+	{
+		double v = dist(approximate(smp->get_sample(i)),
+			smp->get_value(i));
+
+		if (v < min_err)
+			min_err = v;
+	}
+
+	return min_err;
+}
+
+// средняя ошибка
+double cpn_net::get_avg_error() const
+{
+	double avg_err = 0.0;
+
+        for (long i = smp->get_samples_count() - 1; i >= 0; --i)
+	{
+		avg_err += dist(approximate(smp->get_sample(i)),
+			smp->get_value(i));
+	}
+
+	return avg_err / smp->get_samples_count() / smp->get_outputs_number();
+}
+
+// возвращает номер кластера, которому принадлежит вектор x
+unsigned cpn_net::get_cluster(const vec& x) const
+{
+	return kl->get_cluster(x);
+}
+
+// реинициализация сети
+void cpn_net::make_net(unsigned nnk,
+		unsigned nng,
+		unsigned in)
+{
+	delete kl;
+	delete gl;
+
+	kl = new kohonen_layer(nnk, in);
+	gl = new grossberg_layer(nng, nnk);
+	inputs_number = in;
+}

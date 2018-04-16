@@ -1,0 +1,22 @@
+// основные определения и функции
+#include <vector>
+
+typedef vector<double> vec;
+
+// нормализация вектора
+extern vec& normalize(vec& v);
+
+// возвращает норму вектора
+extern double norm(const vec& v);
+
+// возвращает расстояние между векторами
+extern double dist(const vec& v1, const vec& v2);
+
+// параметры для обучения
+struct teach_parameters
+{
+	double rate;
+	double min_error;
+	unsigned max_iter_count;
+	double neighbourhood;
+};

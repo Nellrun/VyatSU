@@ -1,0 +1,90 @@
+// [snip]
+
+void kohonen_layer::next_teach_iter(const sample& smp, unsigned t, double s)
+{
+	// выбираем вектор из обучающей выборки
+	static unsigned ind;
+
+	vec curr_smp = smp.get_sample(ind);
+
+	// определ€ем нейрон-победитель
+	unsigned winner = get_winner(curr_smp);
+
+	// модифицируем веса синапсов нейронов
+	for (unsigned j = 0; j < neurons.size(); ++j)
+	{
+		double h1 = dist(neurons[winner]->get_weights(),
+			neurons[j]->get_weights());
+		double h = exp(-0.5 * h1 * h1 / s / s);
+
+		for (unsigned i = 0; i < inputs_number; ++i)
+		{
+			(*neurons[j])[i] += 1.0 / (double)t * h *
+				(curr_smp[i] - (*neurons[j])[i]);
+		}
+	}
+
+	// переходим к следующему примеру
+	ind = ++ind % smp.get_samples_count();
+}
+
+unsigned kohonen_layer::get_winner(const vec& v)
+{
+	if (v.size() != inputs_number)
+		throw Exception("Ќедопустимый размер вектора");
+
+	double min_dist = 1e20;
+	unsigned winner;
+
+	for (long i = neurons.size() - 1; i >= 0; --i)
+	{
+		double curr_dist = dist(neurons[i]->get_weights(), v) * st[i];
+
+		if (curr_dist < min_dist)
+		{
+			min_dist = curr_dist;
+			winner = i;
+		}
+	}
+
+	st[winner]++;
+	return winner;
+}
+
+unsigned kohonen_layer::get_cluster(const vec& v) const
+{
+	if (v.size() != inputs_number)
+		throw Exception("Ќедопустимый размер вектора");
+
+	double min_dist = 1e20;
+	unsigned winner;
+
+	for (long i = neurons.size() - 1; i >= 0; --i)
+	{
+		double curr_dist = dist(neurons[i]->get_weights(), v) * st[i];
+
+		if (curr_dist < min_dist)
+		{
+			min_dist = curr_dist;
+			winner = i;
+		}
+	}
+
+	return winner;
+}
+
+// [snip]
+
+void kohonen_layer::randomize_weights()
+{
+	// случайным образом инициализируем веса
+	for (vector<neuron *>::const_iterator i = neurons.begin();
+		i != neurons.end(); ++i)
+	{
+		(*i)->randomize_weights();
+	}
+
+	st.assign(st.size(), 0);
+}
+
+// [snip]

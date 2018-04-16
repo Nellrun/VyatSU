@@ -1,0 +1,99 @@
+// [snip]
+
+/*
+ * Базовый класс -- слой НС
+ */
+class layer
+{
+protected:
+	// нейроны слоя
+	vector<neuron *> neurons;
+
+	// число входов слоя
+	unsigned inputs_number;
+public:
+	// конструктор
+	// neurons_number -- число нейронов в слое
+	// inputs_number -- число входов сети
+	layer(unsigned neurons_number, unsigned inputs_number);
+	virtual ~layer();
+
+	// возвращает матрицу весов синапсов всех нейронов слоя
+	vector<vec> get_layer_struct() const;
+};
+
+/*
+ * Слой Кохонена
+ */
+class kohonen_layer: public layer
+{
+	// число выигрышей определенных нейронов
+	vector<unsigned> st;
+
+	// возвращает нейрон-победитель и модифицирует st
+	unsigned get_winner(const vec& v);
+
+	// подсчитывает ошибку при обучении
+	double get_error(const sample& s) const;
+public:
+	// конструктор
+	// neurons_number -- число нейронов в слое Кохонена
+	// inputs_number -- число входов слоя
+	kohonen_layer(unsigned neurons_number, unsigned inputs_number);
+	~kohonen_layer() {}
+
+	// обучить сеть
+	void teach(const sample& s,
+		const double& min_err,		// порог ошибки
+		const unsigned& max_iter_count,	// порог итераций обучения
+		const double& nbh);		// размер окрестности
+
+	// возвращает номер кластера, к которому принадлежит вектор v
+	unsigned get_cluster(const vec& v) const;
+
+	// инициализация весов случайным образом
+	void randomize_weights();
+
+	// одна итерация обучения
+	void next_teach_iter(const sample& smp, unsigned t, double s);
+
+	vec get_output(const vec& x) const;
+};
+
+/*
+ * Слой Гроссберга
+ */
+class grossberg_layer: public layer
+{
+public:
+	// конструктор
+	// neurons_number -- число нейронов в слое Гроссберга
+	// inputs_number -- число входов слоя
+	grossberg_layer(unsigned neurons_number, unsigned inputs_number);
+	~grossberg_layer() {}
+
+	// обучить слой
+	void teach(const kohonen_layer* kl,		// слой Кохонена
+		const sample& smp,			// обучающая выборка
+		const double& rate,			// скорость
+		const double& min_err,			// порог ошибки
+		const unsigned& max_iter_count);	// порог итераций
+
+	// одина итерация обучения
+	void teach_step(const kohonen_layer* kl,
+		const sample& smp,
+		const double& rate,
+		const double& min_err);
+
+	void teach_step_few_winners(const kohonen_layer* kl,
+		const sample& smp,
+		const double& rate,
+		const double& min_err);
+
+	// выход слоя
+	vec get_output(unsigned neuron_number);
+	vec get_output_few_winners(const vec& y);
+
+	// инициализация весов случайным образом
+	void randomize_weights();
+};

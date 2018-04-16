@@ -1,0 +1,76 @@
+// [snip]
+
+/*
+ * Сеть встречного распространения
+ */
+class cpn_net
+{
+	// число входов сети
+	unsigned inputs_number;
+
+	// обучающая выборка
+	sample *smp;
+
+	// параметры обучения
+	teach_parameters params;
+
+	// переменные хранят текущее состояние процесса обучения
+	unsigned cur_iter, t;
+	double s, a;
+
+	// слой Кохонена
+	kohonen_layer *kl;
+
+	// слой Гроссберга
+	grossberg_layer *gl;
+public:
+	// конструктор
+	// neurons_number_kohonen -- число нейронов в слое Кохонена
+	// neurons_number_grossberg -- число нейронов в слое Гроссберга
+	// inputs_nuber -- число входов сети
+	cpn_net(unsigned neurons_number_kohonen,
+		unsigned neurons_number_grossberg,
+		unsigned inputs_number);
+	~cpn_net();
+
+	// загрузить обучающую выборку
+	void load_sample(const sample& s);
+
+	// получить выход сети
+	vec approximate(const vec& x) const;
+	vec approximate_few_winners(const vec& x) const;
+
+	// обучение сети
+	void teach(const struct teach_parameters& param);
+	bool teach_step();
+	bool teach_step_few_winners();
+
+	// инициализация весов синапсов нейронов случайными числами
+	void randomize(const struct teach_parameters& param);
+
+	// среднеквадратичная ошибка
+	double get_rms_error() const;
+
+	// максимальная ошибка
+	double get_max_error() const;
+
+	// минимальная ошибка
+	double get_min_error() const;
+
+	// средняя ошибка
+	double get_avg_error() const;
+
+	// возвращает номер кластера, которому принадлежит вектор x
+	unsigned get_cluster(const vec& x) const;
+
+	// реинициализация сети
+	void make_net(unsigned neurons_number_kohonen,
+		unsigned neurons_number_grossberg,
+		unsigned inputs_number);
+
+	// возвращает матрицу весов синапсов всех нейронов слоя Кохонена
+	vector<vec> get_kohonen_layer_struct() const;
+
+	// возвращает матрицу весов синапсов всех нейронов слоя Гроссберга
+	vector<vec> get_grossberg_layer_struct() const;
+};

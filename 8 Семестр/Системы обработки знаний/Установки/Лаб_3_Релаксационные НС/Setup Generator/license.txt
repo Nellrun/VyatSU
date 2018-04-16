@@ -1,0 +1,42 @@
+
+   Setup Generator
+
+   SOFTWARE LICENSE AGREEMENT
+
+   LICENSE:
+
+    * Setup Generator is freeware. 
+
+    * You may distribute your setups made with Setup Generator as 
+      you want.
+
+    * You may use Setup Generator to make ANY setups for ANY number of
+      products.
+
+    * You may not alter this software in any way, including changing help 
+      and text files. You may modify only the strings in the .LN files 
+      located in the Language folder. 
+
+    * Setup Generator IS DISTRIBUTED "AS IS".  NO WARRANTY OF 
+      ANY KIND IS EXPRESSED OR IMPLIED. YOU USE IT AT YOUR OWN RISK.
+      GENTEE, INC. WILL NOT BE LIABLE FOR DATA LOSS, DAMAGES, 
+      LOSS OF PROFITS OR ANY OTHER KIND OF LOSS WHILE USING OR 
+      MISUSING THIS SOFTWARE.
+
+    * You are hereby licensed to make any number of backup copies of
+      this free software and documentation. You can give the copy of
+      the software to anyone or distribute the freeware version of the
+      software providing that no additional fee is charged and the
+      package files are not modified in any way.
+
+    * All copyrights to Setup Generator are exclusively 
+      owned by Gentee, Inc..
+
+    * Installing and using Setup Generator means the acceptance of
+      these terms and conditions of the license. If you do not agree with
+      the terms of this license you must remove Setup Generator files
+      from your storage devices and cease to use the product.
+
+    Copyright 1998-2000 Gentee, Inc., All rights reserved.
+    Internet: http://www.gentee.com
+    Email: info@gentee.com

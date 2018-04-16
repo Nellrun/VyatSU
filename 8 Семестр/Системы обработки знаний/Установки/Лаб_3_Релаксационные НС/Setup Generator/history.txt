@@ -1,0 +1,45 @@
+
+ What's new - Setup Generator versions history
+ ================================================
+
+ 2001.1.0 ( 23 January 2001 )
+ -----------------------------------------
+ * Add 'Make All setups' command
+ * Fixed some minor bugs
+
+ 2000.2.6 ( 29 December 2000 )
+ -----------------------------------------
+ * Fixed crashes on NT
+
+ 2000.2.5 ( 20 December 2000 )
+ -----------------------------------------
+ * Fixed bug with saving font settings after Font Dialog Window.
+ * Done mouse wheel support. 
+ * Deleting uninstall.exe at once after uninstallation.
+ * Added the creating of log-file of the last packing process - temp.log. It contains the list of all packed files and compressions ratios.  
+
+ 2000.2.4 ( 19 October 2000 ) 
+ -----------------------------------------
+ * Fixed a little bug
+ * Source Directory may be empty if File list is not empty.
+
+ 2000.2.3 ( 21 September 2000 ) 
+ -----------------------------------------
+ * Fixed bug with the caption of Confirmation File Dialog
+ * Fixed bug when an user sign wrong installation path
+ * Fixed some bugs 
+
+ 2000.2.2 ( 25 August 2000 ) 
+ -----------------------------------------
+ * Fixed some bugs
+
+ 2000.2.1 ( July 2000 )
+ -----------------------------------------
+ * Fixed bug when Uninstall option is unchecked but there are shortcuts  
+
+ Final release 2000.2.0 ( 19 July 2000 )
+ -----------------------------------------
+
+ Copyright 2000 Gentee, Inc., All rights reserved.
+ Internet: http://www.gentee.com
+ Email: info@gentee.com

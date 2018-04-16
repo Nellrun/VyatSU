@@ -1,0 +1,46 @@
+// [snip]
+
+// конструктор
+// neurons_number -- число нейронов в слое
+// inputs_number -- число входов сети
+layer::layer(unsigned nn, unsigned in)
+{
+	if (!nn)
+		throw Exception("Число нейронов в слое не может быть нулевым.");
+
+	if (!in)
+		throw Exception("У слоя должен быть хотя бы один слой.");
+
+	neurons.resize(nn);
+
+	// создаем нейроны слоя
+	for (vector<neuron *>::iterator i = neurons.begin();
+		i != neurons.end(); ++i)
+	{
+		*i = new neuron(in);
+	}
+
+	inputs_number = in;
+}
+
+layer::~layer()
+{
+	// удаляем все нейроны
+	for (vector<neuron *>::iterator i = neurons.begin();
+		i != neurons.end(); ++i)
+	{
+		if (*i)
+			delete *i;
+	}
+}
+
+// возвращает матрицу весов синапсов всех нейронов слоя
+vector<vec> layer::get_layer_struct() const
+{
+	vector<vec> r(neurons.size());
+
+	for (long i = r.size() - 1; i >= 0; --i)
+		r[i] = neurons[i]->get_weights();
+
+	return r;
+}

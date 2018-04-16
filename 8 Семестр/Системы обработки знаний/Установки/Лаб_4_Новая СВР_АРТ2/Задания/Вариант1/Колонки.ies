@@ -1,0 +1,140 @@
+{\rtf1\ansi\ansicpg1251\deff0\deflang1049{\fonttbl{\f0\fnil\fcharset204 MS Sans Serif;}{\f1\fnil MS Sans Serif;}{\f2\fswiss\fcharset0 Tahoma;}{\f3\fswiss\fcharset204 Tahoma;}}
+\viewkind4\uc1\pard\f0\fs16\'c3\'c8\'cf\'ce\'d2\'c5\'c7\'db:
+\par \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab \{MD122, Pro1, Pro2, Solo1, Solo4, Solo5, Solo6\}
+\par \f1 
+\par \f0\'cf\'c0\'d0\'c0\'cc\'c5\'d2\'d0\'db:
+\par \'cd\'e0\'eb\'e8\'f7\'e8\'e5_\'f1\'e0\'e1\'e2\'f3\'f4\'e5\'f0\'e0 \{\'c4\'e0, \'cd\'e5\'f2\}
+\par \'ca\'ee\'eb\'e8\'f7\'e5\'f1\'f2\'e2\'ee_\'ea\'ee\'eb\'ee\'ed\'ee\'ea \{2, 4, 5\}
+\par \'cc\'e0\'f2\'e5\'f0\'e8\'e0\'eb \{\'c4\'e5\'f0\'e5\'e2\'ee, \'cf\'eb\'e0\'f1\'f2\'e8\'ea\}
+\par \'cd\'e0\'eb\'e8\'f7\'e8\'e5_\'cf\'c4\'d3 \{\'c4\'e0, \'cd\'e5\'f2\}
+\par \'d6\'e5\'ed\'e0 \{2000-5000, \'e1\'ee\'eb\'e5\'e5_5000, \'e4\'ee_2000\}
+\par \'d0\'e0\'e7\'ec\'e5\'f0 \{\'c1\'ee\'eb\'fc\'f8\'e8\'e5, \'cc\'e0\'eb\'e5\'ed\'fc\'ea\'e8\'e5, \'d1\'f0\'e5\'e4\'ed\'e8\'e5\}
+\par \'cc\'ee\'f9\'ed\'ee\'f1\'f2\'fc \{100, 110, 15, 50, 60, 70, 80, 90\}
+\par \f1 
+\par \f0\'cf\'c5\'d0\'c5\'cc\'c5\'cd\'cd\'db\'c5:
+\par 
+\par NAME 1
+\par \lang1033\f2 IF \f3\'ca\'ee\'eb\'e8\'f7\'e5\'f1\'f2\'e2\'ee_\'ea\'ee\'eb\'ee\'ed\'ee\'ea 2 
+\par THEN \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Pro1 [0,25], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo1 [0,25], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo5 [0,25], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab MD122 [0,25]
+\par \f2 ELSE \f3 
+\par \f2 END
+\par 
+\par NAME 2
+\par IF \f3\'ca\'ee\'eb\'e8\'f7\'e5\'f1\'f2\'e2\'ee_\'ea\'ee\'eb\'ee\'ed\'ee\'ea 4 
+\par THEN \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Pro2 [0,5], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo4 [0,5]
+\par ELSE 
+\par END 
+\par 
+\par NAME \f2 3
+\par IF \f3\'ca\'ee\'eb\'e8\'f7\'e5\'f1\'f2\'e2\'ee_\'ea\'ee\'eb\'ee\'ed\'ee\'ea 5 
+\par THEN \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo6 [0,7]
+\par ELSE 
+\par END 
+\par      \f2  \lang1049\f0 
+\par \f1 NAME \lang1033\f2 4
+\par IF \f3\'cc\'e0\'f2\'e5\'f0\'e8\'e0\'eb \'c4\'e5\'f0\'e5\'e2\'ee 
+\par THEN \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo1 [0,25], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo4 [0,25], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo5 [0,25], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo6 [0,25], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Pro1 [-0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Pro2 [-0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab MD122 [-0,7]
+\par ELSE \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Pro1 [0,3], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Pro2 [0,3], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab MD122 [0,3], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo1 [-0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo4 [-0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo5 [-0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo6 [-0,7]
+\par END    
+\par  
+\par NAME \f2 5
+\par IF \f3\'cc\'ee\'f9\'ed\'ee\'f1\'f2\'fc 15 
+\par THEN \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo1 [-0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo4 [-0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo5 [-0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo6 [-0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Pro1 [-0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Pro2 [-0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab MD122 [0,7]
+\par ELSE IF \'cc\'ee\'f9\'ed\'ee\'f1\'f2\'fc 50 
+\par THEN \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo1 [-0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo4 [0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo5 [-0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo6 [-0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Pro1 [-0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Pro2 [-0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab MD122 [-0,7]
+\par ELSE IF \'cc\'ee\'f9\'ed\'ee\'f1\'f2\'fc 60 
+\par THEN \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo1 [0,5], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo4 [-0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo5 [-0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo6 [-0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Pro1 [0,5], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Pro2 [-0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab MD122 [-0,7]  
+\par ELSE IF \'cc\'ee\'f9\'ed\'ee\'f1\'f2\'fc 70 
+\par THEN \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo1 [-0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo4 [-0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo5 [-0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo6 [-0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Pro1 [-0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Pro2 [0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab MD122 [-0,7]
+\par ELSE IF \'cc\'ee\'f9\'ed\'ee\'f1\'f2\'fc 80 
+\par THEN \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo1 [-0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo4 [-0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo5 [0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo6 [-0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Pro1 [-0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Pro2 [-0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab MD122 [-0,7]
+\par ELSE IF \'cc\'ee\'f9\'ed\'ee\'f1\'f2\'fc 100 
+\par THEN \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo1 [-0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo4 [-0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo5 [-0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo6 [0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Pro1 [-0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Pro2 [-0,7], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab MD122 [-0,7]
+\par ELSE 
+\par END    
+\par 
+\par NAME \f2 6
+\par IF \f3\'cd\'e0\'eb\'e8\'f7\'e8\'e5_\'cf\'c4\'d3 \'c4\'e0 
+\par THEN \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Pro1 [0,25], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Pro2 [0,25], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo5 [0,25], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo6 [0,25]
+\par ELSE \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo1 [0,3], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo4 [0,3], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab MD122 [0,3]
+\par END 
+\par 
+\par NAME \f2 7
+\par IF \f3\'cd\'e0\'eb\'e8\'f7\'e8\'e5_\'f1\'e0\'e1\'e2\'f3\'f4\'e5\'f0\'e0 \'c4\'e0 
+\par THEN \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Pro1 [0,5], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Pro2 [0,5]
+\par ELSE \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab MD122 [0,2], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo1 [0,2], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo4 [0,2], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo5 [0,2], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo6 [0,2]
+\par END 
+\par 
+\par NAME \f2 8
+\par IF \f3\'d0\'e0\'e7\'ec\'e5\'f0 \'c1\'ee\'eb\'fc\'f8\'e8\'e5
+\par THEN \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Pro2 [0,5], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo6 [0,5]
+\par ELSE IF \'d0\'e0\'e7\'ec\'e5\'f0 \'d1\'f0\'e5\'e4\'ed\'e8\'e5 
+\par THEN \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Pro1 [0,5], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo5 [0,5]
+\par ELSE \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo1 [0,3], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo4 [0,3], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab MD122 [0,3] 
+\par END          
+\par 
+\par NAME \f2 9
+\par \f3 IF \'d6\'e5\'ed\'e0 \'e4\'ee_2000 
+\par THEN \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab MD122 [0,5], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo1 [0,5]
+\par ELSE IF \'d6\'e5\'ed\'e0 2000-5000 
+\par THEN \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Pro1 [0,3], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo4 [0,3], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo5 [0,3]
+\par ELSE \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Pro2 [0,5], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo6 [0,5]
+\par END            \lang1049\f1 
+\par 
+\par NAME \lang1033\f2 10
+\par IF \f3\'cd\'e0\'eb\'e8\'f7\'e8\'e5_\'cf\'c4\'d3 \'c4\'e0 AND \'cd\'e0\'eb\'e8\'f7\'e8\'e5_\'f1\'e0\'e1\'e2\'f3\'f4\'e5\'f0\'e0 \'c4\'e0 
+\par THEN \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Pro1 [0,5], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Pro2 [0,5]  
+\par ELSE 
+\par END 
+\par 
+\par NAME \f2 11
+\par IF \f3\'d0\'e0\'e7\'ec\'e5\'f0 \'c1\'ee\'eb\'fc\'f8\'e8\'e5 AND \'d6\'e5\'ed\'e0 \'e1\'ee\'eb\'e5\'e5_5000 
+\par THEN \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Pro2 [0,4], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo6 [0,4]  
+\par ELSE 
+\par END 
+\par 
+\par NAME \f2 12
+\par IF \f3\'cc\'e0\'f2\'e5\'f0\'e8\'e0\'eb \'c4\'e5\'f0\'e5\'e2\'ee AND \'d6\'e5\'ed\'e0 2000-5000 
+\par THEN \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo4 [0,4], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo5 [0,4]  
+\par ELSE 
+\par END 
+\par 
+\par NAME \f2 13
+\par IF \f3\'cc\'ee\'f9\'ed\'ee\'f1\'f2\'fc 60 AND \'ca\'ee\'eb\'e8\'f7\'e5\'f1\'f2\'e2\'ee_\'ea\'ee\'eb\'ee\'ed\'ee\'ea 2 
+\par THEN \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Pro1 [0,4], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo1 [0,4]
+\par ELSE 
+\par END   
+\par 
+\par NAME \f2 14
+\par IF \f3\'ca\'ee\'eb\'e8\'f7\'e5\'f1\'f2\'e2\'ee_\'ea\'ee\'eb\'ee\'ed\'ee\'ea 2 AND \'cd\'e0\'eb\'e8\'f7\'e8\'e5_\'f1\'e0\'e1\'e2\'f3\'f4\'e5\'f0\'e0 \'c4\'e0  AND \'d0\'e0\'e7\'ec\'e5\'f0 \'d1\'f0\'e5\'e4\'ed\'e8\'e5 
+\par THEN \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Pro1 [0,6] 
+\par ELSE IF \'ca\'ee\'eb\'e8\'f7\'e5\'f1\'f2\'e2\'ee_\'ea\'ee\'eb\'ee\'ed\'ee\'ea 4 AND \'cd\'e0\'eb\'e8\'f7\'e8\'e5_\'f1\'e0\'e1\'e2\'f3\'f4\'e5\'f0\'e0 \'c4\'e0 AND \'d0\'e0\'e7\'ec\'e5\'f0 \'c1\'ee\'eb\'fc\'f8\'e8\'e5 
+\par THEN \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Pro2 [0,6]
+\par ELSE IF \'ca\'ee\'eb\'e8\'f7\'e5\'f1\'f2\'e2\'ee_\'ea\'ee\'eb\'ee\'ed\'ee\'ea 2 AND \'cd\'e0\'eb\'e8\'f7\'e8\'e5_\'f1\'e0\'e1\'e2\'f3\'f4\'e5\'f0\'e0 \'cd\'e5\'f2 AND \'d0\'e0\'e7\'ec\'e5\'f0 \'cc\'e0\'eb\'e5\'ed\'fc\'ea\'e8\'e5 
+\par THEN \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo1 [0,6]
+\par ELSE IF \'ca\'ee\'eb\'e8\'f7\'e5\'f1\'f2\'e2\'ee_\'ea\'ee\'eb\'ee\'ed\'ee\'ea 4 AND \'cd\'e0\'eb\'e8\'f7\'e8\'e5_\'f1\'e0\'e1\'e2\'f3\'f4\'e5\'f0\'e0 \'cd\'e5\'f2 AND \'d0\'e0\'e7\'ec\'e5\'f0 \'cc\'e0\'eb\'e5\'ed\'fc\'ea\'e8\'e5 
+\par THEN \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo4 [0,6]
+\par ELSE IF \'ca\'ee\'eb\'e8\'f7\'e5\'f1\'f2\'e2\'ee_\'ea\'ee\'eb\'ee\'ed\'ee\'ea 2 AND \'cd\'e0\'eb\'e8\'f7\'e8\'e5_\'f1\'e0\'e1\'e2\'f3\'f4\'e5\'f0\'e0 \'cd\'e5\'f2 AND \'d0\'e0\'e7\'ec\'e5\'f0 \'d1\'f0\'e5\'e4\'ed\'e8\'e5 
+\par THEN \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo5 [0,6]
+\par ELSE IF \'ca\'ee\'eb\'e8\'f7\'e5\'f1\'f2\'e2\'ee_\'ea\'ee\'eb\'ee\'ed\'ee\'ea 5 AND \'cd\'e0\'eb\'e8\'f7\'e8\'e5_\'f1\'e0\'e1\'e2\'f3\'f4\'e5\'f0\'e0 \'cd\'e5\'f2 AND \'d0\'e0\'e7\'ec\'e5\'f0 \'c1\'ee\'eb\'fc\'f8\'e8\'e5 
+\par THEN \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo6 [0,6]
+\par ELSE IF \'ca\'ee\'eb\'e8\'f7\'e5\'f1\'f2\'e2\'ee_\'ea\'ee\'eb\'ee\'ed\'ee\'ea 2 AND \'cd\'e0\'eb\'e8\'f7\'e8\'e5_\'f1\'e0\'e1\'e2\'f3\'f4\'e5\'f0\'e0 \'cd\'e5\'f2 AND \'d0\'e0\'e7\'ec\'e5\'f0 \'cc\'e0\'eb\'e5\'ed\'fc\'ea\'e8\'e5 
+\par THEN \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab MD122 [0,6]
+\par ELSE 
+\par END       
+\par 
+\par NAME \f2 15
+\par IF \f3\'ca\'ee\'eb\'e8\'f7\'e5\'f1\'f2\'e2\'ee_\'ea\'ee\'eb\'ee\'ed\'ee\'ea 2 AND \'cc\'e0\'f2\'e5\'f0\'e8\'e0\'eb \'c4\'e5\'f0\'e5\'e2\'ee 
+\par THEN \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo1 [0,5], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo5 [0,5], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab MD122 [-0,5], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Pro1 [-0,5] 
+\par ELSE 
+\par END
+\par 
+\par NAME \f2 16
+\par IF \f3\'ca\'ee\'eb\'e8\'f7\'e5\'f1\'f2\'e2\'ee_\'ea\'ee\'eb\'ee\'ed\'ee\'ea 2 AND \'cc\'e0\'f2\'e5\'f0\'e8\'e0\'eb \'cf\'eb\'e0\'f1\'f2\'e8\'ea 
+\par THEN \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab MD122 [0,5], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Pro1 [0,5], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo1 [-0,5], \'ca\'ee\'eb\'ee\'ed\'ea\'e8_Microlab Solo5 [-0,5]   
+\par ELSE 
+\par END
+\par \f2 
+\par \f3     \lang1049\f1 
+\par }
+ 

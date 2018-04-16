@@ -1,0 +1,77 @@
+// [snip]
+
+// конструктор
+// file_name -- файл с выборкой в формате CSV
+// inputs_nubmer -- число входных параметров
+// outputs_number -- число выходных параметров
+sample::sample(const char *file_name, unsigned in, unsigned on)
+{
+	ifstream sample_file(file_name);
+
+	if (!sample_file.is_open())
+		throw Exception("Невозможно открыть файл с выборкой");
+
+	inputs_number = in;
+	outputs_number = on;
+
+	// разделитель дробной и целой части -- запятая
+	TFormatSettings settings;
+	GetLocaleFormatSettings(0x0419, settings);
+
+	// читаем следующую строчку из файла
+	string str;
+	while (!getline(sample_file, str).eof())
+	{
+		if (str == "")
+			break;
+
+		vec sample(inputs_number);
+		unsigned cnt = inputs_number;
+
+		// считываем входной вектор
+		while (cnt)
+		{
+			unsigned ind = str.find_first_of(";");
+			sample[inputs_number - cnt--] =
+				StrToFloat(str.substr(0, ind).c_str(), settings);
+			str = str.substr(ind + 1);
+		}
+
+		// определяем, является ли вектор примером для тестирования
+		if (remove_semicolons(str) == "")
+		{
+			testing.push_back(sample);
+			continue;
+		}
+
+		samples.push_back(sample);
+
+		cnt = outputs_number;
+		vec value(outputs_number);
+
+		// считываем текущий выходной вектор
+		while (cnt)
+		{
+			unsigned ind = str.find_first_of(";");
+			value[outputs_number - cnt--] =
+				StrToFloat(str.substr(0, ind).c_str(), settings);
+			str = str.substr(ind + 1);
+		}
+
+		values.push_back(value);
+	}
+
+	sample_file.close();
+}
+
+// удаляет все ";" из строки
+string sample::remove_semicolons(const string& str)
+{
+	string s(str);
+	s.erase(remove(s.begin(), s.end(), ';'), s.end());
+
+	return s;
+}
+
+
+

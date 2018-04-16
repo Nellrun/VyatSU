@@ -1,0 +1,29 @@
+#include "misc.h"
+#include <vector>
+
+/*
+ * Класс нейрона
+ */
+class neuron
+{
+	// веса синапсов
+	vec weights, old_weights;
+public:
+	// конструктор
+	// inputs_number -- число синапсов
+	neuron(unsigned inputs_number);
+	~neuron() {}
+
+	// инициализация весов случайными значениями
+	void randomize_weights(double a = 0.0, double b = 1.0);
+
+	// нормализация весов
+	void normalize_weights();
+
+	// доступ к произвольному весу
+	const double& operator[] (const unsigned& ind) const;
+	double& operator[] (unsigned& ind);
+
+	// возвращает вектор весов
+	const vec& get_weights() const;
+};
